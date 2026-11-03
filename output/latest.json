@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-11-03T09:59:17.645103-05:00",
+  "items": [
+    {
+      "case_number": "2:26-cv-05544",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "[Dismiss for Failure to State a Claim] ( 13 )",
+      "filed_at": "2026-11-02T13:55:15-05:00",
+      "fingerprint": "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
+      "matched_terms": [
+        "America PAC"
+      ],
+      "precision": "time",
+      "source": "EDPA official CM/ECF RSS",
+      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151&38",
+      "text": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al [Dismiss for Failure to State a Claim] ( 13 )",
+      "title": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al",
+      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151"
+    }
+  ],
+  "scheduled": false,
+  "since": "2026-11-02T08:00:00-05:00",
+  "statuses": [
+    {
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
+      "fetched": 1215,
+      "inspected": 1215,
+      "source": "Official CM/ECF RSS",
+      "status": "ok"
+    },
+    {
+      "court": "U.S. District Court for the Middle District of Pennsylvania",
+      "detail": "ParseError: no element found: line 1, column 0",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "Official CM/ECF RSS",
+      "status": "error"
+    },
+    {
+      "court": "EDPA, MDPA, and Third Circuit",
+      "detail": "18 targeted search queries completed.",
+      "fetched": 3,
+      "inspected": 18,
+      "source": "CourtListener RECAP search",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Supreme Court",
+      "detail": "New appellate dockets searched from 2026-11-02.",
+      "fetched": 10,
+      "inspected": 10,
+      "source": "UJS appellate case search",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Superior Court",
+      "detail": "New appellate dockets searched from 2026-11-02.",
+      "fetched": 50,
+      "inspected": 50,
+      "source": "UJS appellate case search",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Commonwealth Court",
+      "detail": "New appellate dockets searched from 2026-11-02.",
+      "fetched": 4,
+      "inspected": 4,
+      "source": "UJS appellate case search",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Supreme Court",
+      "detail": "Official published-opinion feed.",
+      "fetched": 55,
+      "inspected": 55,
+      "source": "Pennsylvania Courts opinion RSS",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Superior Court",
+      "detail": "Official published-opinion feed.",
+      "fetched": 61,
+      "inspected": 61,
+      "source": "Pennsylvania Courts opinion RSS",
+      "status": "ok"
+    },
+    {
+      "court": "Pennsylvania Commonwealth Court",
+      "detail": "Official published-opinion feed.",
+      "fetched": 50,
+      "inspected": 50,
+      "source": "Pennsylvania Courts opinion RSS",
+      "status": "ok"
+    },
+    {
+      "court": "Philadelphia Court of Common Pleas",
+      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-02.",
+      "fetched": 2140,
+      "inspected": 60,
+      "source": "Philadelphia FJD complaints mirror",
+      "status": "ok"
+    },
+    {
+      "court": "Bucks County Court of Common Pleas",
+      "detail": "Civil cases opened from 11/02/2026 through 11/03/2026.",
+      "fetched": 84,
+      "inspected": 84,
+      "source": "PSI Web Viewer",
+      "status": "ok"
+    },
+    {
+      "court": "Montgomery County Court of Common Pleas",
+      "detail": "RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "PSI Web Viewer",
+      "status": "error"
+    },
+    {
+      "court": "Delaware County Court of Common Pleas",
+      "detail": "Civil cases opened since 2026-11-02.",
+      "fetched": 20,
+      "inspected": 20,
+      "source": "C-Track Public Access",
+      "status": "ok"
+    },
+    {
+      "court": "Monroe County Court of Common Pleas",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-02&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-03&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "C-Track Public Access",
+      "status": "error"
+    },
+    {
+      "court": "Chester County Court of Common Pleas",
+      "detail": "Scoped court, but no dependable anonymous bulk filing feed is available to this repository.",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "ChescoPIN",
+      "status": "unavailable"
+    },
+    {
+      "court": "Lackawanna County Court of Common Pleas",
+      "detail": "Scoped court, but no dependable anonymous bulk filing feed is available to this repository.",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "INFOCON",
+      "status": "unavailable"
+    },
+    {
+      "court": "Luzerne County Court of Common Pleas",
+      "detail": "Scoped court, but no dependable anonymous bulk filing feed is available to this repository.",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "SearchIQS",
+      "status": "unavailable"
+    },
+    {
+      "court": "Pike County Court of Common Pleas",
+      "detail": "Scoped court, but no dependable anonymous bulk filing feed is available to this repository.",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "CountySuite/Prothonotary",
+      "status": "unavailable"
+    },
+    {
+      "court": "Wayne County Court of Common Pleas",
+      "detail": "Scoped court, but no dependable anonymous bulk filing feed is available to this repository.",
+      "fetched": 0,
+      "inspected": 0,
+      "source": "INFOCON",
+      "status": "unavailable"
+    }
+  ],
+  "watchlist": {
+    "boards": 13,
+    "candidates": 4,
+    "officials": 44,
+    "pacs": 21,
+    "parties": 32,
+    "terms": 149
+  }
+}
