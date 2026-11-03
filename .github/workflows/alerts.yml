@@ -1,0 +1,58 @@
+name: Pennsylvania election-court alerts
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: Optional ISO lower bound for a test/catch-up run
+        required: false
+        type: string
+  # Activation gate: the 10-minute cron is intentionally absent until the
+  # Nov. 2 catch-up test is approved.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pa-election-court-alerts
+  cancel-in-progress: false
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    env:
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      ALERT_TO: ${{ secrets.ALERT_TO }}
+      CL_TOKEN: ${{ secrets.CL_TOKEN }}
+      SINCE: ${{ inputs.since }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Poll courts and send alert if the report has matches or failures
+        continue-on-error: true
+        shell: bash
+        run: |
+          args=(--send)
+          if [[ -n "$SINCE" ]]; then
+            args+=(--since "$SINCE")
+          fi
+          python tracker.py "${args[@]}"
+      - name: Persist deduplication state and public health output
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "pa-election-court-alerts[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json output/latest.json output/latest.html
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update court alert state"
+          git push
+

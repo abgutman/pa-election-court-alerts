@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "as_of": "2026-11-03",
+  "timezone": "America/New_York",
+  "scope": {
+    "congressional_districts": {
+      "PA-01": ["Bucks", "Montgomery (part)"],
+      "PA-08": ["Lackawanna", "Luzerne (part)", "Monroe (part)", "Pike", "Wayne"]
+    },
+    "philadelphia_region": ["Philadelphia", "Bucks", "Chester", "Delaware", "Montgomery"],
+    "counties": ["Philadelphia", "Bucks", "Chester", "Delaware", "Montgomery", "Lackawanna", "Luzerne", "Monroe", "Pike", "Wayne"]
+  },
+  "settings": {
+    "request_timeout_seconds": 45,
+    "request_delay_seconds": 0.15,
+    "lookback_days": 3,
+    "state_limit_per_source": 25000
+  },
+  "courts": [
+    {"id": "pa_commonwealth", "name": "Pennsylvania Commonwealth Court", "source": "UJS appellate search and Pennsylvania Courts opinion RSS", "coverage": "active"},
+    {"id": "pa_supreme", "name": "Pennsylvania Supreme Court", "source": "UJS appellate search and Pennsylvania Courts opinion RSS", "coverage": "active"},
+    {"id": "pa_superior", "name": "Pennsylvania Superior Court", "source": "UJS appellate search and Pennsylvania Courts opinion RSS", "coverage": "active", "note": "Included as a safety net although election cases ordinarily route through Commonwealth Court."},
+    {"id": "third_circuit", "name": "U.S. Court of Appeals for the Third Circuit", "source": "CourtListener RECAP", "coverage": "active"},
+    {"id": "edpa", "name": "U.S. District Court for the Eastern District of Pennsylvania", "source": "Official CM/ECF RSS and CourtListener RECAP", "coverage": "active"},
+    {"id": "mdpa", "name": "U.S. District Court for the Middle District of Pennsylvania", "source": "Official CM/ECF RSS and CourtListener RECAP", "coverage": "active"},
+    {"id": "philadelphia", "name": "Philadelphia Court of Common Pleas", "source": "Philadelphia FJD data via av-tools", "coverage": "active_delayed", "note": "The public bulk mirror is updated periodically rather than every ten minutes."},
+    {"id": "bucks", "name": "Bucks County Court of Common Pleas", "source": "Bucks County PSI Web Viewer", "coverage": "active"},
+    {"id": "montgomery", "name": "Montgomery County Court of Common Pleas", "source": "Montgomery County PSI Web Viewer", "coverage": "active"},
+    {"id": "delaware", "name": "Delaware County Court of Common Pleas", "source": "Delaware County C-Track Public Access", "coverage": "active"},
+    {"id": "monroe", "name": "Monroe County Court of Common Pleas", "source": "Monroe County C-Track Public Access", "coverage": "active_when_available"},
+    {"id": "chester", "name": "Chester County Court of Common Pleas", "source": "ChescoPIN", "coverage": "subscription_required"},
+    {"id": "lackawanna", "name": "Lackawanna County Court of Common Pleas", "source": "INFOCON", "coverage": "manual_or_account_required"},
+    {"id": "luzerne", "name": "Luzerne County Court of Common Pleas", "source": "SearchIQS", "coverage": "manual_or_account_required"},
+    {"id": "pike", "name": "Pike County Court of Common Pleas", "source": "CountySuite/Prothonotary", "coverage": "manual_or_account_required"},
+    {"id": "wayne", "name": "Wayne County Court of Common Pleas", "source": "INFOCON", "coverage": "manual_or_account_required"}
+  ],
+  "officials": [
+    {"name": "Al Schmidt", "role": "Pennsylvania Secretary of the Commonwealth / chief election official", "jurisdiction": "Pennsylvania"},
+    {"name": "Omar Sabir", "role": "Chair, Philadelphia City Commissioners / County Board of Elections", "jurisdiction": "Philadelphia"},
+    {"name": "Lisa M. Deeley", "role": "Vice Chair, Philadelphia City Commissioners / County Board of Elections", "jurisdiction": "Philadelphia"},
+    {"name": "Seth Bluestein", "role": "Philadelphia City Commissioner / County Board of Elections", "jurisdiction": "Philadelphia"},
+    {"name": "Jordan B. Yeager", "role": "Chair, Bucks County Board of Elections (2026 substitute member)", "jurisdiction": "Bucks"},
+    {"name": "Gene DiGirolamo", "role": "Bucks County Commissioner / Board of Elections", "jurisdiction": "Bucks"},
+    {"name": "Diane M. Ellis-Marseglia", "role": "Bucks County Commissioner / Board of Elections", "jurisdiction": "Bucks"},
+    {"name": "Alec Mettin", "role": "Director of Elections", "jurisdiction": "Bucks"},
+    {"name": "Josh Maxwell", "role": "Chester County Commissioner / Board of Elections", "jurisdiction": "Chester"},
+    {"name": "Marian Moskowitz", "role": "Chester County Commissioner / Board of Elections", "jurisdiction": "Chester"},
+    {"name": "Eric Roe", "role": "Chester County Commissioner / Board of Elections", "jurisdiction": "Chester"},
+    {"name": "Michele DiCaprio", "role": "Director of Voter Services", "jurisdiction": "Chester"},
+    {"name": "Ashley Lunkenheimer", "role": "Chair, Delaware County Board of Elections", "jurisdiction": "Delaware"},
+    {"name": "Scott Alberts", "role": "Delaware County Board of Elections member", "jurisdiction": "Delaware"},
+    {"name": "John C. McMeekin II", "role": "Delaware County Board of Elections member", "jurisdiction": "Delaware"},
+    {"name": "Laureen Hagan", "role": "Chief Clerk of Elections", "jurisdiction": "Delaware"},
+    {"name": "Crystal Winterbottom", "role": "Interim Voter Registration Director", "jurisdiction": "Delaware"},
+    {"name": "Neil K. Makhija", "role": "Chair, Montgomery County Board of Elections", "jurisdiction": "Montgomery"},
+    {"name": "Jamila H. Winder", "role": "Vice Chair, Montgomery County Board of Elections", "jurisdiction": "Montgomery"},
+    {"name": "Thomas DiBello", "role": "Montgomery County Commissioner / Board of Elections", "jurisdiction": "Montgomery"},
+    {"name": "Frank Dean", "role": "Director of Elections", "jurisdiction": "Montgomery"},
+    {"name": "Bill Gaughan", "role": "Lackawanna County Commissioner / Board of Elections", "jurisdiction": "Lackawanna"},
+    {"name": "Chris Chermak", "role": "Lackawanna County Commissioner / Board of Elections", "jurisdiction": "Lackawanna"},
+    {"name": "Thom Welby", "role": "Lackawanna County Commissioner / Board of Elections", "jurisdiction": "Lackawanna"},
+    {"name": "Elizabeth Hopkins", "role": "Director of Elections", "jurisdiction": "Lackawanna"},
+    {"name": "Christine Boyle", "role": "Chair, Luzerne County Election Board", "jurisdiction": "Luzerne"},
+    {"name": "Albert Schlosser", "role": "Luzerne County Election Board member", "jurisdiction": "Luzerne"},
+    {"name": "Richard Morelli", "role": "Luzerne County Election Board member", "jurisdiction": "Luzerne"},
+    {"name": "Audrey Serniak", "role": "Luzerne County Election Board member", "jurisdiction": "Luzerne"},
+    {"name": "Roxanne Arreguin", "role": "Luzerne County Election Board member", "jurisdiction": "Luzerne"},
+    {"name": "Emily Cook", "role": "Director of Elections", "jurisdiction": "Luzerne"},
+    {"name": "John D. Christy", "role": "Chair, Monroe County Commissioners / Board of Elections", "jurisdiction": "Monroe"},
+    {"name": "David C. Parker", "role": "Vice Chair, Monroe County Commissioners / Board of Elections", "jurisdiction": "Monroe"},
+    {"name": "Sharon S. Laverdure", "role": "Monroe County Commissioner / Board of Elections", "jurisdiction": "Monroe"},
+    {"name": "Sara May-Silfee", "role": "Director of Elections and Voter Registration", "jurisdiction": "Monroe"},
+    {"name": "Penny Robson", "role": "Deputy Director of Elections and Voter Registration", "jurisdiction": "Monroe"},
+    {"name": "Matthew M. Osterberg", "role": "Chair, Pike County Commissioners / Board of Elections", "jurisdiction": "Pike"},
+    {"name": "Ronald R. Schmalzle", "role": "Vice Chair, Pike County Commissioners / Board of Elections", "jurisdiction": "Pike"},
+    {"name": "Christa L. Caceres", "role": "Pike County Commissioner / Board of Elections", "jurisdiction": "Pike"},
+    {"name": "Nadeen Manzoni", "role": "Director of Elections", "jurisdiction": "Pike"},
+    {"name": "Jocelyn Cramer", "role": "Chair, Wayne County Commissioners / Board of Elections", "jurisdiction": "Wayne"},
+    {"name": "James Shook", "role": "Wayne County Commissioner / Board of Elections", "jurisdiction": "Wayne"},
+    {"name": "Brian Smith", "role": "Wayne County Commissioner / Board of Elections", "jurisdiction": "Wayne"},
+    {"name": "Amy Christopher", "role": "Director of Elections", "jurisdiction": "Wayne"}
+  ],
+  "boards": [
+    "Pennsylvania Department of State", "Pennsylvania Bureau of Elections", "Philadelphia County Board of Elections", "Philadelphia City Commissioners", "Bucks County Board of Elections", "Chester County Board of Elections", "Delaware County Board of Elections", "Montgomery County Board of Elections", "Lackawanna County Board of Elections", "Luzerne County Board of Elections and Registration", "Monroe County Board of Elections", "Pike County Board of Elections", "Wayne County Board of Elections"
+  ],
+  "candidates": [
+    {"name": "Bob Harvie", "aliases": ["Robert J. Harvie", "Robert Harvie", "Harvie"], "race": "PA-01", "party": "Democratic"},
+    {"name": "Brian Fitzpatrick", "aliases": ["Fitzpatrick"], "race": "PA-01", "party": "Republican"},
+    {"name": "Paige Cognetti", "aliases": ["Cognetti"], "race": "PA-08", "party": "Democratic"},
+    {"name": "Rob Bresnahan Jr.", "aliases": ["Rob Bresnahan", "Robert Bresnahan", "Bresnahan"], "race": "PA-08", "party": "Republican"}
+  ],
+  "campaign_committees": ["Bob Harvie for Congress", "Brian Fitzpatrick for All of Us", "Paige for PA", "Rob for PA"],
+  "political_parties": [
+    "Pennsylvania Democratic Party", "Democratic Party of Pennsylvania", "Republican Party of Pennsylvania", "Pennsylvania Republican Party", "Libertarian Party of Pennsylvania", "Green Party of Pennsylvania",
+    "Philadelphia Democratic City Committee", "Republican City Committee of Philadelphia", "Bucks County Democratic Committee", "Bucks County Republican Committee", "Chester County Democratic Committee", "Republican Committee of Chester County", "Delaware County Democratic Party", "Delaware County Republican Party", "Montgomery County Democratic Committee", "Montgomery County Republican Committee", "Lackawanna County Democratic Committee", "Lackawanna County Republican Committee", "Luzerne County Democratic Party", "Republican Party of Luzerne County", "Monroe County Democratic Committee", "Monroe County Republican Committee", "Pike County Democratic Committee", "Pike County Republican Committee", "Wayne County Democratic Committee", "Wayne County Republican Committee", "Democratic National Committee", "Republican National Committee", "Democratic Congressional Campaign Committee", "National Republican Congressional Committee", "DCCC", "NRCC"
+  ],
+  "pacs": [
+    "Action Together NEPA PAC", "America PAC", "Defending America PAC", "Building Together", "Campaign for Working Class Communities", "CFFE PAC", "For Our Future", "Future Pennsylvania PAC", "Indivisible Action", "MomsRising Together", "No Going Back PAC Inc.", "NRA Victory Fund, Inc.", "Our Heritage Matters", "Progressive Turnout Project", "Seniors Empowering an Effective Democracy", "SEED-PAC", "Tomorrow Together", "UnidosUS Action PAC", "Workers Vote", "Working America", "Congressional Leadership Fund", "House Majority PAC"
+  ],
+  "generic_keywords": [
+    "election", "elections", "voting", "voter", "voters", "ballot", "ballots", "mail-in ballot", "mail ballot", "absentee ballot", "provisional ballot", "canvass", "recanvass", "recount", "polling place", "poll watcher", "nomination petition", "nomination paper", "candidate substitution", "election certification", "certify election", "election code", "board of elections", "voter registration", "disenfranchise", "drop box", "signature verification"
+  ],
+  "sources": {
+    "officials": [
+      "https://www.pa.gov/agencies/vote/contact-us/contact-your-election-officials",
+      "https://vote.phila.gov/",
+      "https://www.buckscounty.gov/176/Board-of-Elections---General-Information",
+      "https://www.montgomerycountypa.gov/your-government/administration/boards-commissions/board-elections",
+      "https://www.chesco.org/156/Voter-Services",
+      "https://www.delcopa.gov/vote/boe",
+      "https://www.luzernecounty.org/1060/Election-Board-Members",
+      "https://www.monroecountypa.gov/departments/elections",
+      "https://waynecountypa.gov/197/Bureau-Of-Elections"
+    ],
+    "districts": "https://www.pa.gov/agencies/vote/resources/redistricting/pennsylvania-redistricting-us-congress",
+    "fec": "https://api.open.fec.gov/v1/"
+  }
+}
