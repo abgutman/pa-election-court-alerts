@@ -1,31 +1,14 @@
 {
-  "generated_at": "2026-11-03T12:28:33.437588-05:00",
-  "items": [
-    {
-      "case_number": "1500 C.D. 2025",
-      "court": "Pennsylvania Commonwealth Court",
-      "description": "Published opinion",
-      "filed_at": "2026-11-03T00:00:00-05:00",
-      "fingerprint": "91e0f15a57e83dabc60ee6ef6609f2c7ebfffee291c35468d06b552cf45d4f4a",
-      "matched_terms": [
-        "recount"
-      ],
-      "precision": "time",
-      "priority": "high",
-      "source": "Pennsylvania Courts opinion RSS",
-      "source_id": "opinion:https://www.pacourts.us/assets/opinions/Commonwealth/out/1500CD25_11-3-2026.pdf",
-      "title": "Pa. Ofc. of Gov. v. T. Shepherd and Broad and Liberty, Inc. (OOR) - 1500 C.D. 2025",
-      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1500CD25_11-3-2026.pdf"
-    }
-  ],
-  "scheduled": false,
-  "since": "2026-10-31T12:26:56.823004-04:00",
+  "generated_at": "2026-11-03T17:30:16.546449-05:00",
+  "items": [],
+  "scheduled": true,
+  "since": "2026-10-31T17:29:19.789705-04:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1292,
-      "inspected": 1292,
+      "fetched": 1270,
+      "inspected": 1270,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -48,22 +31,22 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 12,
-      "inspected": 12,
+      "fetched": 15,
+      "inspected": 15,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 58,
-      "inspected": 58,
+      "fetched": 72,
+      "inspected": 72,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-10-31; 1 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 5,
       "inspected": 5,
       "source": "UJS appellate case search",
@@ -72,22 +55,22 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 55,
-      "inspected": 55,
+      "fetched": 54,
+      "inspected": 54,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 61,
-      "inspected": 61,
+      "fetched": 58,
+      "inspected": 58,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 4 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -112,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 10/31/2026 through 11/03/2026.",
-      "fetched": 99,
-      "inspected": 13,
+      "fetched": 116,
+      "inspected": 17,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -129,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-10-31.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
