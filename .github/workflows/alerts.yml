@@ -7,8 +7,8 @@ on:
         description: Optional ISO lower bound for a test/catch-up run
         required: false
         type: string
-  # Activation gate: the 10-minute cron is intentionally absent until the
-  # Nov. 2 catch-up test is approved.
+  schedule:
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
@@ -39,6 +39,9 @@ jobs:
         shell: bash
         run: |
           args=(--send)
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" ]]; then
+            args+=(--scheduled)
+          fi
           if [[ -n "$SINCE" ]]; then
             args+=(--since "$SINCE")
           fi
@@ -55,4 +58,3 @@ jobs:
           fi
           git commit -m "Update court alert state"
           git push
-

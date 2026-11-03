@@ -2,7 +2,7 @@
 
 This public-record monitor searches for election litigation affecting the Philadelphia region, Pennsylvania's 1st and 8th congressional districts, and Pennsylvania appellate courts. It records source health, de-duplicates results, writes JSON/HTML output, and can email the configured reporting inbox.
 
-The workflow is currently **manual only**. Its 10-minute schedule must not be enabled until the Nov. 2 catch-up test is approved.
+The workflow is configured to poll every 10 minutes and can also be run manually.
 
 ## Geographic and court scope
 
@@ -12,7 +12,7 @@ The monitored court inventory is:
 
 | Court | Source | Automated status |
 |---|---|---|
-| Pennsylvania Commonwealth, Supreme, and Superior Courts | UJS appellate search; official opinion RSS | Active |
+| Pennsylvania Commonwealth, Supreme, and Superior Courts | UJS appellate search; official opinion RSS | Active; matching Commonwealth dockets and opinions are high priority |
 | U.S. District Court, Eastern District of Pennsylvania | official CM/ECF RSS; CourtListener RECAP | Active |
 | U.S. District Court, Middle District of Pennsylvania | official CM/ECF RSS; CourtListener RECAP | Active |
 | U.S. Court of Appeals for the Third Circuit | CourtListener RECAP | Active |
@@ -26,6 +26,8 @@ The monitored court inventory is:
 | Pike Common Pleas | CountySuite/Prothonotary | Scoped; no dependable anonymous bulk filing feed |
 
 "10 minutes" describes how often GitHub Actions will poll after activation. It does not make a court publish within ten minutes, and GitHub's scheduled jobs can be delayed. Every report therefore distinguishes an empty result from a failed, delayed, or unavailable source.
+
+For Commonwealth Court, the monitor text-checks newly opened docket sheets and newly published opinion PDFs. Once a new Commonwealth docket matches the election watch list, its official docket sheet remains tracked so later changes generate high-priority alerts. The anonymous UJS source identifies that the docket changed but may not expose a precise posting time for each entry.
 
 ## Watch list
 
@@ -51,7 +53,7 @@ python3 -m venv .venv
 .venv/bin/python tracker.py --since '2026-11-02T08:00:00-05:00' --test --replay --send
 ```
 
-Email uses `GMAIL_USER` and `GMAIL_APP_PASSWORD`. Delivery goes to `ALERT_TO` when set and otherwise to `GMAIL_USER`. CourtListener uses `CL_TOKEN` when available.
+Email uses `GMAIL_USER` and `GMAIL_APP_PASSWORD`. Delivery requires an explicit `ALERT_TO`; the monitor does not fall back to the sender address. CourtListener uses `CL_TOKEN` when available.
 
 The run writes `output/latest.json`, `output/latest.html`, and hash/ID-only deduplication state in `data/state.json`. County sources that expose only dates cannot distinguish 7:59 a.m. from 8:01 a.m.; the catch-up test therefore conservatively includes every matching Nov. 2 date-only filing.
 
@@ -61,7 +63,7 @@ Run tests with:
 python -m unittest discover -s tests -v
 ```
 
-## GitHub setup and activation gate
+## GitHub setup
 
 Create a public repository, push this tree, then load the four Actions secrets from the already exported shell variables:
 
@@ -70,14 +72,7 @@ source ~/.zprofile
 python scripts/configure_github_secrets.py OWNER/REPOSITORY
 ```
 
-The current workflow supports `workflow_dispatch` only. After the catch-up email is approved, activate polling by adding this event under `on:` in `.github/workflows/alerts.yml` and pushing it:
-
-```yaml
-schedule:
-  - cron: "*/10 * * * *"
-```
-
-The workflow has `contents: write` permission so each successful or partially successful run can persist deduplication state and the latest source-health report.
+The workflow supports both `workflow_dispatch` and a `*/10 * * * *` schedule. It has `contents: write` permission so each successful or partially successful run can persist deduplication state and the latest source-health report.
 
 ## Source references
 

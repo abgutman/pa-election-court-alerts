@@ -32,7 +32,7 @@ def main() -> int:
     values = {
         "GMAIL_USER": os.environ.get("GMAIL_USER", "").strip(),
         "GMAIL_APP_PASSWORD": os.environ.get("GMAIL_APP_PASSWORD", "").strip(),
-        "ALERT_TO": os.environ.get("ALERT_TO", "").strip() or os.environ.get("GMAIL_USER", "").strip(),
+        "ALERT_TO": os.environ.get("ALERT_TO", "").strip(),
         "CL_TOKEN": os.environ.get("CL_TOKEN", "").strip(),
     }
     missing = [name for name, value in values.items() if not value]
@@ -51,4 +51,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

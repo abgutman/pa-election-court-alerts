@@ -39,6 +39,38 @@ class TrackerTests(unittest.TestCase):
         second = tracker.Item("s", "c", "id", "changed", "changed", "2026-11-03", "changed", "changed", "changed")
         self.assertEqual(first.fingerprint, second.fingerprint)
 
+    def test_tracked_commonwealth_docket_is_always_an_alert_candidate(self):
+        item = tracker.Item(
+            tracker.TRACKED_COMMONWEALTH_SOURCE, tracker.COMMONWEALTH_COURT,
+            "update", "123 MD 2026", "Example", "2026-11-03", "Docket changed", "url", "motion filed",
+        )
+        self.assertEqual(
+            tracker.item_matching_terms(item, []),
+            ["tracked election-related Commonwealth Court docket"],
+        )
+
+    def test_commonwealth_docket_entry_snapshot_ignores_generated_header(self):
+        first = """DOCKET ENTRY
+Filed Date Docket Entry / Filer Participant Type Exit DateRepresenting
+November 3, 2026 Petition for Review
+11:43 A.M.
+Neither the Appellate Courts nor the Administrative Office of Pennsylvania Courts assumes any liability
+for inaccurate or delayed data, errors or omissions on the docket sheets.
+"""
+        second = first.replace("11:43 A.M.", "12:01 P.M.")
+        self.assertEqual(
+            tracker.commonwealth_docket_entries(first),
+            tracker.commonwealth_docket_entries(second),
+        )
+
+    def test_public_item_does_not_retain_matching_text(self):
+        item = tracker.Item("s", "c", "id", "1", "title", "2026-11-03", "desc", "url", "sensitive matching text")
+        self.assertNotIn("text", tracker.public_item(item))
+
+    def test_opinion_title_docket_number_is_extracted(self):
+        title = "Example v. Board - 1500 C.D. 2025"
+        self.assertEqual(tracker.docket_from_title(title), "1500 C.D. 2025")
+
 
 if __name__ == "__main__":
     unittest.main()

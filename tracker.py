@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import io
 import json
 import os
 import re
@@ -23,6 +24,7 @@ from urllib.parse import quote, urlencode
 from zoneinfo import ZoneInfo
 
 import requests
+from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parent
@@ -34,6 +36,8 @@ UA = "pa-election-court-alerts/1.0 (public-record monitor)"
 ET_TZ = ZoneInfo("America/New_York")
 UJS_BASE = "https://ujsportal.pacourts.us"
 CL_API = "https://www.courtlistener.com/api/rest/v4"
+COMMONWEALTH_COURT = "Pennsylvania Commonwealth Court"
+TRACKED_COMMONWEALTH_SOURCE = "Commonwealth Court tracked docket"
 
 
 @dataclass
@@ -49,6 +53,7 @@ class Item:
     text: str
     precision: str = "date"
     matched_terms: list[str] = field(default_factory=list)
+    priority: str = "standard"
 
     @property
     def fingerprint(self) -> str:
@@ -122,6 +127,36 @@ def matching_terms(text: str, terms: list[str]) -> list[str]:
     return matches
 
 
+def item_matching_terms(item: Item, terms: list[str]) -> list[str]:
+    if item.source == TRACKED_COMMONWEALTH_SOURCE:
+        return ["tracked election-related Commonwealth Court docket"]
+    return matching_terms(item.text, terms)
+
+
+def extract_pdf_text(content: bytes, max_pages: int | None = None) -> str:
+    reader = PdfReader(io.BytesIO(content))
+    pages = reader.pages if max_pages is None else reader.pages[:max_pages]
+    return compact(" ".join((page.extract_text() or "") for page in pages))
+
+
+def commonwealth_docket_entries(text: str) -> str:
+    if "DOCKET ENTRY" not in text:
+        return compact(text)
+    section = text.rsplit("DOCKET ENTRY", 1)[-1]
+    header = re.search(r"Filed Date\s+Docket Entry.*?Representing", section, re.S | re.I)
+    if header:
+        section = section[header.end():]
+    section = re.sub(
+        r"Neither the Appellate Courts nor the Administrative Office of Pennsylvania Courts.*?docket sheets\.",
+        " ", section, flags=re.S | re.I,
+    )
+    section = re.sub(r"\b\d{1,2}:\d{2}\s+[AP]\.M\.", " ", section)
+    section = re.sub(r"Commonwealth Court of PennsylvaniaCommonwealth Docket Sheet", " ", section, flags=re.I)
+    section = re.sub(r"Docket Number:\s*[^\n]+", " ", section, flags=re.I)
+    section = re.sub(r"Page\s+\d+\s+of\s+\d+", " ", section, flags=re.I)
+    return compact(section)
+
+
 def parse_since(raw: str | None, lookback_days: int) -> datetime:
     if not raw:
         return datetime.now(ET_TZ) - timedelta(days=lookback_days)
@@ -158,6 +193,11 @@ def iso_date(raw: str) -> str:
         except ValueError:
             continue
     return token
+
+
+def docket_from_title(title: str) -> str:
+    match = re.search(r"\b\d+\s+[A-Z][A-Z.]{1,7}\s+\d{4}\b", title or "")
+    return compact(match.group(0)) if match else ""
 
 
 def request_session() -> requests.Session:
@@ -317,12 +357,12 @@ def collect_courtlistener(config: dict[str, Any], since: datetime) -> Collection
 APP_COURTS = {
     "Supreme": "Pennsylvania Supreme Court",
     "Superior": "Pennsylvania Superior Court",
-    "Commonwealth": "Pennsylvania Commonwealth Court",
+    "Commonwealth": COMMONWEALTH_COURT,
 }
 APP_RSS = {
     "Pennsylvania Supreme Court": "https://www.pacourts.us/Rss/Opinions/Supreme/",
     "Pennsylvania Superior Court": "https://www.pacourts.us/Rss/Opinions/Superior/",
-    "Pennsylvania Commonwealth Court": "https://www.pacourts.us/Rss/Opinions/Commonwealth/",
+    COMMONWEALTH_COURT: "https://www.pacourts.us/Rss/Opinions/Commonwealth/",
 }
 
 
@@ -353,7 +393,7 @@ def _parse_ujs_results(page: str, court: str) -> list[Item]:
     return output
 
 
-def collect_pa_appellate(config: dict[str, Any], since: datetime) -> Collection:
+def collect_pa_appellate(config: dict[str, Any], since: datetime, source_seen: set[str]) -> Collection:
     result = Collection()
     timeout = config["settings"]["request_timeout_seconds"]
     session = request_session()
@@ -363,6 +403,8 @@ def collect_pa_appellate(config: dict[str, Any], since: datetime) -> Collection:
         token_match = re.search(r'__RequestVerificationToken.*?value=["\']([^"\']+)', page.text)
         token = token_match.group(1) if token_match else ""
         for key, court in APP_COURTS.items():
+            pdf_failures: list[str] = []
+            pdfs_inspected = 0
             payload = {
                 "SearchBy": "AppellateCourtName", "AppellateCourtName": key,
                 "FiledStartDate": since.date().isoformat(),
@@ -372,12 +414,27 @@ def collect_pa_appellate(config: dict[str, Any], since: datetime) -> Collection:
             response = session.post(f"{UJS_BASE}/CaseSearch", data=payload, headers={"Referer": f"{UJS_BASE}/CaseSearch"}, timeout=timeout)
             response.raise_for_status()
             items = _parse_ujs_results(response.text, court)
+            if court == COMMONWEALTH_COURT:
+                for item in items:
+                    item.priority = "high"
+                    if not item.url or item.source_id in source_seen:
+                        continue
+                    try:
+                        docket_response = session.get(item.url, timeout=timeout)
+                        docket_response.raise_for_status()
+                        item.text = f"{item.text} {extract_pdf_text(docket_response.content)}"
+                        pdfs_inspected += 1
+                    except Exception as error:  # noqa: BLE001
+                        pdf_failures.append(f"{item.case_number}: {type(error).__name__}: {error}")
             result.items.extend(items)
             result.observed.extend(item.source_id for item in items)
             result.statuses.append(Status(
-                source="UJS appellate case search", court=court, status="ok",
+                source="UJS appellate case search", court=court,
+                status="partial" if pdf_failures else "ok",
                 fetched=len(items), inspected=len(items),
-                detail=f"New appellate dockets searched from {since.date().isoformat()}.",
+                detail=("; ".join(pdf_failures[:3]) if pdf_failures else
+                        f"New appellate dockets searched from {since.date().isoformat()}; "
+                        f"{pdfs_inspected} new Commonwealth docket PDF(s) text-checked."),
             ))
     except Exception as error:  # noqa: BLE001
         result.statuses.append(Status(
@@ -386,6 +443,8 @@ def collect_pa_appellate(config: dict[str, Any], since: datetime) -> Collection:
         ))
 
     for court, url in APP_RSS.items():
+        pdf_failures: list[str] = []
+        pdfs_inspected = 0
         try:
             response = session.get(url, timeout=timeout)
             response.raise_for_status()
@@ -402,23 +461,86 @@ def collect_pa_appellate(config: dict[str, Any], since: datetime) -> Collection:
                         filed = parsedate_to_datetime(pub).astimezone(ET_TZ).isoformat()
                     except (TypeError, ValueError):
                         filed = pub
+                source_id = f"opinion:{guid}"
+                text = title
+                if court == COMMONWEALTH_COURT and source_id not in source_seen and link:
+                    try:
+                        opinion_response = session.get(link, timeout=timeout)
+                        opinion_response.raise_for_status()
+                        text = f"{title} {extract_pdf_text(opinion_response.content, max_pages=12)}"
+                        pdfs_inspected += 1
+                    except Exception as error:  # noqa: BLE001
+                        pdf_failures.append(f"{title}: {type(error).__name__}: {error}")
                 item = Item(
                     source="Pennsylvania Courts opinion RSS", court=court,
-                    source_id=f"opinion:{guid}", case_number="", title=title,
+                    source_id=source_id, case_number=docket_from_title(title), title=title,
                     filed_at=filed, description="Published opinion", url=link,
-                    text=title, precision="time",
+                    text=text, precision="time",
+                    priority="high" if court == COMMONWEALTH_COURT else "standard",
                 )
                 result.items.append(item)
                 result.observed.append(item.source_id)
             result.statuses.append(Status(
-                source="Pennsylvania Courts opinion RSS", court=court, status="ok",
-                fetched=len(entries), inspected=len(entries), detail="Official published-opinion feed.",
+                source="Pennsylvania Courts opinion RSS", court=court,
+                status="partial" if pdf_failures else "ok",
+                fetched=len(entries), inspected=len(entries),
+                detail=("; ".join(pdf_failures[:3]) if pdf_failures else
+                        f"Official published-opinion feed; {pdfs_inspected} new Commonwealth opinion PDF(s) text-checked."),
             ))
         except Exception as error:  # noqa: BLE001
             result.statuses.append(Status(
                 source="Pennsylvania Courts opinion RSS", court=court, status="error",
                 detail=f"{type(error).__name__}: {error}",
             ))
+    return result
+
+
+def collect_tracked_commonwealth_dockets(
+    config: dict[str, Any], state: dict[str, Any], update_state: bool,
+) -> Collection:
+    result = Collection()
+    tracked = state.get("tracked_commonwealth_dockets", {})
+    if not tracked:
+        result.statuses.append(Status(
+            source=TRACKED_COMMONWEALTH_SOURCE, court=COMMONWEALTH_COURT, status="ok",
+            detail="No election-related Commonwealth Court dockets are tracked yet.",
+        ))
+        return result
+    timeout = config["settings"]["request_timeout_seconds"]
+    session = request_session()
+    failures: list[str] = []
+    inspected = 0
+    for docket, metadata in tracked.items():
+        url = compact(metadata.get("url"))
+        if not url:
+            failures.append(f"{docket}: missing docket URL")
+            continue
+        try:
+            response = session.get(url, timeout=timeout)
+            response.raise_for_status()
+            entries = commonwealth_docket_entries(extract_pdf_text(response.content))
+            digest = hashlib.sha256(entries.encode()).hexdigest()
+            previous = compact(metadata.get("entries_hash"))
+            inspected += 1
+            if previous and digest != previous:
+                result.items.append(Item(
+                    source=TRACKED_COMMONWEALTH_SOURCE, court=COMMONWEALTH_COURT,
+                    source_id=f"commonwealth-docket:{docket}:{digest}", case_number=docket,
+                    title=compact(metadata.get("title")) or docket,
+                    filed_at=date.today().isoformat(),
+                    description="The official Commonwealth Court docket sheet changed. Open the docket for the newest filing or order.",
+                    url=url, text=entries, priority="high",
+                ))
+            if update_state:
+                metadata["entries_hash"] = digest
+        except Exception as error:  # noqa: BLE001
+            failures.append(f"{docket}: {type(error).__name__}: {error}")
+    result.statuses.append(Status(
+        source=TRACKED_COMMONWEALTH_SOURCE, court=COMMONWEALTH_COURT,
+        status="partial" if failures and inspected else "error" if failures else "ok",
+        fetched=len(tracked), inspected=inspected,
+        detail="; ".join(failures[:3]) if failures else f"Polled {inspected} tracked election-related docket sheet(s).",
+    ))
     return result
 
 
@@ -678,8 +800,9 @@ def render_report(report: dict[str, Any]) -> tuple[str, str]:
     ]
     if report["items"]:
         for item in report["items"]:
+            priority = "HIGH PRIORITY — " if item.get("priority") == "high" else ""
             lines.extend([
-                f"{item['court']} — {item['case_number'] or 'no docket number'}",
+                f"{priority}{item['court']} — {item['case_number'] or 'no docket number'}",
                 item["title"] or "(no title)",
                 f"Filed: {item['filed_at'] or 'unknown'} ({item['precision']}-level source)",
                 f"Matched: {', '.join(item['matched_terms'])}",
@@ -696,7 +819,8 @@ def render_report(report: dict[str, Any]) -> tuple[str, str]:
     text = "\n".join(lines)
 
     item_cards = "".join(
-        "<article><h3>" + html.escape(item["title"] or "(no title)") + "</h3>"
+        ("<article class=\"high\"><p><b>HIGH PRIORITY — COMMONWEALTH COURT</b></p>" if item.get("priority") == "high" else "<article>")
+        + "<h3>" + html.escape(item["title"] or "(no title)") + "</h3>"
         + f"<p><b>{html.escape(item['court'])}</b> · {html.escape(item['case_number'] or 'no docket')} · {html.escape(item['filed_at'] or 'unknown date')}</p>"
         + f"<p>{html.escape(item['description'])}</p>"
         + f"<p>Matched: {html.escape(', '.join(item['matched_terms']))}</p>"
@@ -709,7 +833,7 @@ def render_report(report: dict[str, Any]) -> tuple[str, str]:
         for status in report["statuses"]
     )
     body = f"""<!doctype html><html><head><meta charset=\"utf-8\"><title>PA election-court alerts</title>
-<style>body{{font:15px/1.45 system-ui;margin:0;background:#f4f6f8;color:#17202a}}main{{max-width:980px;margin:auto;padding:28px}}article,section{{background:white;padding:18px;margin:14px 0;border-radius:8px}}table{{border-collapse:collapse;width:100%;font-size:13px}}th,td{{border:1px solid #d5d8dc;padding:7px;text-align:left;vertical-align:top}}h1{{color:#17365d}}a{{color:#1756a9}}</style></head><body><main>
+<style>body{{font:15px/1.45 system-ui;margin:0;background:#f4f6f8;color:#17202a}}main{{max-width:980px;margin:auto;padding:28px}}article,section{{background:white;padding:18px;margin:14px 0;border-radius:8px}}article.high{{border-left:6px solid #b42318}}table{{border-collapse:collapse;width:100%;font-size:13px}}th,td{{border:1px solid #d5d8dc;padding:7px;text-align:left;vertical-align:top}}h1{{color:#17365d}}a{{color:#1756a9}}</style></head><body><main>
 <h1>PA election-court alert test/run</h1><p>Window: {html.escape(report['since'])} through {html.escape(report['generated_at'])}</p><p><b>{len(report['items'])} matching filing(s)</b></p>
 {item_cards}<section><h2>Source health</h2><table><thead><tr><th>Status</th><th>Court</th><th>Source</th><th>Detail</th></tr></thead><tbody>{rows}</tbody></table></section>
 <section><b>Timing note:</b> County and UJS sources often expose filing dates without times. For the Nov. 2 8:00 a.m. test, all matching Nov. 2 date-only records are included conservatively.</section>
@@ -720,9 +844,9 @@ def render_report(report: dict[str, Any]) -> tuple[str, str]:
 def send_email(subject: str, text: str, body: str) -> None:
     username = os.environ.get("GMAIL_USER", "").strip()
     password = os.environ.get("GMAIL_APP_PASSWORD", "").strip()
-    recipient = os.environ.get("ALERT_TO", "").strip() or username
+    recipient = os.environ.get("ALERT_TO", "").strip()
     if not username or not password or not recipient:
-        raise RuntimeError("GMAIL_USER, GMAIL_APP_PASSWORD, and recipient (ALERT_TO or GMAIL_USER) are required")
+        raise RuntimeError("GMAIL_USER, GMAIL_APP_PASSWORD, and ALERT_TO are required")
     message = EmailMessage()
     message["Subject"] = subject
     message["From"] = username
@@ -748,6 +872,13 @@ def combine(collections: list[Collection]) -> Collection:
     return output
 
 
+def public_item(item: Item) -> dict[str, Any]:
+    output = asdict(item)
+    output.pop("text", None)
+    output["fingerprint"] = item.fingerprint
+    return output
+
+
 def run(args: argparse.Namespace) -> int:
     config = load_json(CONFIG_PATH)
     state = load_json(STATE_PATH) if STATE_PATH.exists() else {"version": 1, "seen": {}, "last_run": None}
@@ -758,7 +889,8 @@ def run(args: argparse.Namespace) -> int:
     collectors: list[Callable[[], Collection]] = [
         lambda: collect_federal_rss(config, since),
         lambda: collect_courtlistener(config, since),
-        lambda: collect_pa_appellate(config, since),
+        lambda: collect_pa_appellate(config, since, all_seen),
+        lambda: collect_tracked_commonwealth_dockets(config, state, not args.no_state),
         lambda: collect_philadelphia(config, since),
         lambda: collect_psi(config, since, all_seen),
         lambda: collect_ctrack(config, since, all_seen),
@@ -780,20 +912,35 @@ def run(args: argparse.Namespace) -> int:
     for item in collected.items:
         if not item_is_since(item, since):
             continue
-        item.matched_terms = matching_terms(item.text, terms)
+        item.matched_terms = item_matching_terms(item, terms)
         if not item.matched_terms:
             continue
         if not args.replay and item.fingerprint in existing_fingerprints:
             continue
         matches.append(item)
-    matches.sort(key=lambda item: (item.filed_at, item.court, item.case_number), reverse=True)
+    matches.sort(
+        key=lambda item: (item.priority == "high", item.filed_at, item.court, item.case_number),
+        reverse=True,
+    )
+
+    if not args.no_state:
+        tracked = state.setdefault("tracked_commonwealth_dockets", {})
+        for item in matches:
+            if item.court != COMMONWEALTH_COURT or item.source != "UJS appellate case search" or not item.url:
+                continue
+            tracked.setdefault(item.case_number, {
+                "title": item.title,
+                "url": item.url,
+                "tracked_at": datetime.now(ET_TZ).isoformat(),
+                "entries_hash": "",
+            })
 
     generated = datetime.now(ET_TZ).isoformat()
     report = {
         "generated_at": generated,
         "since": since.isoformat(),
-        "scheduled": False,
-        "items": [asdict(item) | {"fingerprint": item.fingerprint} for item in matches],
+        "scheduled": args.scheduled,
+        "items": [public_item(item) for item in matches],
         "statuses": [asdict(status) for status in collected.statuses],
         "watchlist": {
             "terms": len(terms), "officials": len(config["officials"]),
@@ -835,8 +982,9 @@ def run(args: argparse.Namespace) -> int:
     should_send = args.test or bool(matches) or health_changed
     if args.send and should_send:
         prefix = "TEST — " if args.test else ""
+        high_priority = sum(item.priority == "high" for item in matches)
         subject = (
-            f"{prefix}PA election-court alerts: {len(matches)} match(es), "
+            f"{prefix}PA election-court alerts: {len(matches)} match(es), {high_priority} high-priority, "
             f"{len(current_health_errors)} source error(s) since {since.strftime('%b. %-d, %-I:%M %p')}"
         )
         send_email(subject, text_report, html_report)
@@ -853,6 +1001,7 @@ def main() -> int:
     parser.add_argument("--test", action="store_true", help="mark the email subject as a test")
     parser.add_argument("--replay", action="store_true", help="include matches already recorded in state")
     parser.add_argument("--no-state", action="store_true", help="do not update deduplication state")
+    parser.add_argument("--scheduled", action="store_true", help="mark the report as a scheduled run")
     return run(parser.parse_args())
 
 
