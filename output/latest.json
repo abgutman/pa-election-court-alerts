@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T09:59:17.645103-05:00",
+  "generated_at": "2026-11-03T10:19:10.621810-05:00",
   "items": [
     {
       "case_number": "2:26-cv-05544",
@@ -8,7 +8,9 @@
       "filed_at": "2026-11-02T13:55:15-05:00",
       "fingerprint": "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
       "matched_terms": [
-        "America PAC"
+        "Harvie",
+        "America PAC",
+        "Defending America PAC"
       ],
       "precision": "time",
       "source": "EDPA official CM/ECF RSS",
@@ -24,8 +26,8 @@
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1215,
-      "inspected": 1215,
+      "fetched": 1238,
+      "inspected": 1238,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -56,8 +58,8 @@
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-02.",
-      "fetched": 50,
-      "inspected": 50,
+      "fetched": 52,
+      "inspected": 52,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -104,8 +106,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/02/2026 through 11/03/2026.",
-      "fetched": 84,
-      "inspected": 84,
+      "fetched": 86,
+      "inspected": 86,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -178,8 +180,8 @@
     "boards": 13,
     "candidates": 4,
     "officials": 44,
-    "pacs": 21,
+    "pacs": 22,
     "parties": 32,
-    "terms": 149
+    "terms": 154
   }
 }
