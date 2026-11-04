@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-03T17:30:16.546449-05:00",
+  "generated_at": "2026-11-03T21:41:03.331955-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-10-31T17:29:19.789705-04:00",
+  "since": "2026-10-31T21:40:27.759604-04:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1270,
-      "inspected": 1270,
+      "fetched": 1253,
+      "inspected": 1253,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -31,24 +31,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 15,
-      "inspected": 15,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 72,
-      "inspected": 72,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
       "detail": "New appellate dockets searched from 2026-10-31; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 5,
-      "inspected": 5,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -96,7 +96,7 @@
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 10/31/2026 through 11/03/2026.",
       "fetched": 116,
-      "inspected": 17,
+      "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,13 +112,13 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-10-31.",
       "fetched": 20,
-      "inspected": 1,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-10-31&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-03&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-10-31&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-04&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
