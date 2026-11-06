@@ -1,32 +1,14 @@
 {
-  "generated_at": "2026-11-06T10:01:44.753873-05:00",
-  "items": [
-    {
-      "case_number": "737 C.D. 2025",
-      "court": "Pennsylvania Commonwealth Court",
-      "description": "Published opinion",
-      "filed_at": "2026-11-06T00:00:00-05:00",
-      "fingerprint": "66cf4000d8a5bc7bcd88f738773752ce1f57e412516b5b8542f7c55158aa3147",
-      "matched_terms": [
-        "election",
-        "voting"
-      ],
-      "precision": "time",
-      "priority": "high",
-      "source": "Pennsylvania Courts opinion RSS",
-      "source_id": "opinion:https://www.pacourts.us/assets/opinions/Commonwealth/out/737CD25_11-6-2026.pdf",
-      "title": "Bethlehem Landfill Co. v. Lower Saucon Twp., et al. - 737 C.D. 2025",
-      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/737CD25_11-6-2026.pdf"
-    }
-  ],
+  "generated_at": "2026-11-06T15:53:46.370104-05:00",
+  "items": [],
   "scheduled": true,
-  "since": "2026-11-03T09:59:41.210474-05:00",
+  "since": "2026-11-03T15:50:21.942321-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1242,
-      "inspected": 1242,
+      "fetched": 1258,
+      "inspected": 1258,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -40,33 +22,33 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "18 targeted search queries completed.",
-      "fetched": 5,
-      "inspected": 18,
+      "detail": "paed query 1: ReadTimeout: HTTPSConnectionPool(host='www.courtlistener.com', port=443): Read timed out. (read timeout=45)",
+      "fetched": 0,
+      "inspected": 17,
       "source": "CourtListener RECAP search",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-03; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 11,
-      "inspected": 11,
+      "fetched": 12,
+      "inspected": 12,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-03; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 101,
-      "inspected": 101,
+      "fetched": 127,
+      "inspected": 127,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-03; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 5,
-      "inspected": 5,
+      "detail": "New appellate dockets searched from 2026-11-03; 1 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 6,
+      "inspected": 6,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -81,14 +63,14 @@
     {
       "court": "Pennsylvania Superior Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 60,
-      "inspected": 60,
+      "fetched": 58,
+      "inspected": 58,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 2 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -113,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/03/2026 through 11/06/2026.",
-      "fetched": 248,
-      "inspected": 26,
+      "fetched": 310,
+      "inspected": 62,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -130,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-03.",
       "fetched": 20,
-      "inspected": 1,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
