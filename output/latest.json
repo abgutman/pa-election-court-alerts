@@ -1,14 +1,32 @@
 {
-  "generated_at": "2026-11-06T02:02:33.398079-05:00",
-  "items": [],
+  "generated_at": "2026-11-06T10:01:44.753873-05:00",
+  "items": [
+    {
+      "case_number": "737 C.D. 2025",
+      "court": "Pennsylvania Commonwealth Court",
+      "description": "Published opinion",
+      "filed_at": "2026-11-06T00:00:00-05:00",
+      "fingerprint": "66cf4000d8a5bc7bcd88f738773752ce1f57e412516b5b8542f7c55158aa3147",
+      "matched_terms": [
+        "election",
+        "voting"
+      ],
+      "precision": "time",
+      "priority": "high",
+      "source": "Pennsylvania Courts opinion RSS",
+      "source_id": "opinion:https://www.pacourts.us/assets/opinions/Commonwealth/out/737CD25_11-6-2026.pdf",
+      "title": "Bethlehem Landfill Co. v. Lower Saucon Twp., et al. - 737 C.D. 2025",
+      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/737CD25_11-6-2026.pdf"
+    }
+  ],
   "scheduled": true,
-  "since": "2026-11-03T02:00:37.167836-05:00",
+  "since": "2026-11-03T09:59:41.210474-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1157,
-      "inspected": 1157,
+      "fetched": 1242,
+      "inspected": 1242,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -31,16 +49,16 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-03; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 10,
-      "inspected": 10,
+      "fetched": 11,
+      "inspected": 11,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-03; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 99,
-      "inspected": 99,
+      "fetched": 101,
+      "inspected": 101,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -70,7 +88,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 2 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +113,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/03/2026 through 11/06/2026.",
-      "fetched": 222,
-      "inspected": 0,
+      "fetched": 248,
+      "inspected": 26,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +130,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-03.",
       "fetched": 20,
-      "inspected": 20,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
