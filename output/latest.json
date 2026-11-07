@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-07T01:44:51.086705-05:00",
+  "generated_at": "2026-11-07T08:38:14.668078-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-04T01:44:16.008784-05:00",
+  "since": "2026-11-04T08:37:27.765174-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1283,
-      "inspected": 1283,
+      "fetched": 1230,
+      "inspected": 1230,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -22,11 +22,11 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "ca3 query 4: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=ca3&q=%22Matthew+M.+Osterberg%22+OR+%22Ronald+R.+Schmalzle%22+OR+%22Christa+L.+Caceres%22+OR+%22Nadeen+Manzoni%22+OR+%22Jocelyn+Cramer%22+OR+%22James+Shook%22+OR+%22Brian+Smith%22+OR+%22Amy+Christopher%22+OR+%22Pennsylvania+Department+of+State%22+OR+%22Pennsylvania+Bureau+of+Elections%22+OR+%22Philadelphia+County+Board+of+Elections%22+OR+%22Philadelphia+City+Commissioners%22+OR+%22Bucks+County+Board+of+Elections%22+OR+%22Chester+County+Board+of+Elections%22+OR+%22Delaware+County+Board+of+Elections%22+OR+%22Montgomery+County+Board+of+Elections%22+OR+%22Lackawanna+County+Board+of+Elections%22+OR+%22Luzerne+County+Board+of+Elections+and+Registration%22&filed_after=11%2F04%2F2026&order_by=dateFiled+desc&page_size=100",
+      "detail": "18 targeted search queries completed.",
       "fetched": 8,
-      "inspected": 17,
+      "inspected": 18,
       "source": "CourtListener RECAP search",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
@@ -96,7 +96,7 @@
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/04/2026 through 11/07/2026.",
       "fetched": 254,
-      "inspected": 10,
+      "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-04.",
       "fetched": 20,
-      "inspected": 12,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
