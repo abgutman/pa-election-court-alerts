@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-08T14:32:39.463566-05:00",
+  "generated_at": "2026-11-08T18:09:33.216195-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-05T14:31:44.830940-05:00",
+  "since": "2026-11-05T18:09:00.608160-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 12,
-      "inspected": 12,
+      "fetched": 15,
+      "inspected": 15,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
