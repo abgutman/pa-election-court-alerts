@@ -4,7 +4,7 @@
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-08T02:55:11.258312-05:00",
+  "last_run": "2026-11-08T09:58:48.313462-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -475,7 +475,14 @@
       "delaware:9ece2f6295f4344e6525bc757e507bd7697ebab4cb5559e8db7378709a79999e",
       "delaware:09fd7111cb3c3507bcf2f85587fd06c4c885d36d8d930d22b699dea88487185f",
       "delaware:fbb3b42a5a15c9899cf5ebb04154f68fc53368fe2276d7f051dc109c5872bf17",
-      "delaware:5ded7f43edeba618c18a476bf302be39773685a7e52ef8b620e4da307cde5d45"
+      "delaware:5ded7f43edeba618c18a476bf302be39773685a7e52ef8b620e4da307cde5d45",
+      "delaware:adb510ea4847f6ded6e69ac64f275ec7fc20a605e670e14026b01548cd5c7da7",
+      "delaware:8fe6797c787740c68eb32fd34489e441560a281f503c6bbd825c2a161e4ddf1e",
+      "delaware:3b018fbaf966d70bc5188b78ce26ec82b918d06c3482d85e0ecb1e39bd878932",
+      "delaware:dddeaf8d3f250e7447f16ee510dd5c570f79cc4547831fa3d3c4331f122eddee",
+      "delaware:6bb12bbb35fec7aa1e1cd9699822dd3a366dc1c0514e5c5dd6385849202f474b",
+      "delaware:7b38bf2de2759d62648bf21df5e19d7902de0a0ab418c83bed1a6eb1db5b1062",
+      "delaware:da6dc5f70566cdc5f11f85f97e48d8cce553ba50546b27ad2b8a02e9436cd79e"
     ],
     "edpa": [
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664150&23",
