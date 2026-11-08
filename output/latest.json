@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-07T17:09:16.345837-05:00",
+  "generated_at": "2026-11-07T20:28:11.981586-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-04T17:08:42.206267-05:00",
+  "since": "2026-11-04T20:27:32.560400-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 87,
-      "inspected": 87,
+      "fetched": 27,
+      "inspected": 27,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -31,24 +31,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-04; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 9,
-      "inspected": 9,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-04; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 91,
-      "inspected": 91,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
       "detail": "New appellate dockets searched from 2026-11-04; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 3,
-      "inspected": 3,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -118,7 +118,7 @@
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-04&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-07&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-04&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-08&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
