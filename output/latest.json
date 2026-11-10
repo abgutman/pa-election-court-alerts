@@ -1,31 +1,14 @@
 {
-  "generated_at": "2026-11-09T22:34:00.377374-05:00",
-  "items": [
-    {
-      "case_number": "2:26-cv-02879",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "[Protective Order] ( 15 )",
-      "filed_at": "2026-11-09T17:13:19-05:00",
-      "fingerprint": "82df6b0cb88934f96c1a32489bd77449c34e7cd186f770f544b64cc1068eb5e8",
-      "matched_terms": [
-        "Working America"
-      ],
-      "precision": "time",
-      "priority": "standard",
-      "source": "EDPA official CM/ECF RSS",
-      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?653856&41",
-      "title": "2:26-cv-02879 AUSTIN v. WORKING AMERICA",
-      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?653856"
-    }
-  ],
+  "generated_at": "2026-11-10T06:47:12.182657-05:00",
+  "items": [],
   "scheduled": true,
-  "since": "2026-11-06T22:33:24.297800-05:00",
+  "since": "2026-11-07T06:46:31.446139-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1229,
-      "inspected": 1229,
+      "fetched": 1233,
+      "inspected": 1233,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -40,32 +23,32 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 10,
+      "fetched": 6,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
-      "detail": "New appellate dockets searched from 2026-11-06; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 8,
+      "inspected": 8,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
-      "detail": "New appellate dockets searched from 2026-11-06; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 28,
+      "inspected": 28,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-06; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 1,
+      "inspected": 1,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -103,17 +86,17 @@
     },
     {
       "court": "Philadelphia Court of Common Pleas",
-      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-06.",
-      "fetched": 2060,
-      "inspected": 73,
+      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-09.",
+      "fetched": 2171,
+      "inspected": 79,
       "source": "Philadelphia FJD complaints mirror",
       "status": "ok"
     },
     {
       "court": "Bucks County Court of Common Pleas",
-      "detail": "Civil cases opened from 11/06/2026 through 11/09/2026.",
-      "fetched": 190,
-      "inspected": 0,
+      "detail": "Civil cases opened from 11/07/2026 through 11/10/2026.",
+      "fetched": 100,
+      "inspected": 9,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -127,15 +110,15 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "Civil cases opened since 2026-11-06.",
+      "detail": "Civil cases opened since 2026-11-07.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 20,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-06&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-10&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-07&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-10&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
