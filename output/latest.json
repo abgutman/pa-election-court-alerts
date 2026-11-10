@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-10T06:47:12.182657-05:00",
+  "generated_at": "2026-11-10T13:56:16.306449-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-07T06:46:31.446139-05:00",
+  "since": "2026-11-07T13:55:06.169946-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1233,
-      "inspected": 1233,
+      "fetched": 1289,
+      "inspected": 1289,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -23,7 +23,7 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 6,
+      "fetched": 7,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
@@ -31,24 +31,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 8,
-      "inspected": 8,
+      "fetched": 12,
+      "inspected": 12,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 28,
-      "inspected": 28,
+      "fetched": 41,
+      "inspected": 41,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 1,
-      "inspected": 1,
+      "detail": "New appellate dockets searched from 2026-11-07; 2 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 3,
+      "inspected": 3,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -70,7 +70,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 2 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/07/2026 through 11/10/2026.",
-      "fetched": 100,
-      "inspected": 9,
+      "fetched": 110,
+      "inspected": 10,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-07.",
       "fetched": 20,
-      "inspected": 20,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
