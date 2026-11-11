@@ -1,53 +1,14 @@
 {
-  "generated_at": "2026-11-10T18:59:46.567324-05:00",
-  "items": [
-    {
-      "case_number": "2:26-cv-08583",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "RECAP case/search match",
-      "filed_at": "2026-11-09",
-      "fingerprint": "318f2c11823e75501e9d087a19bcebea0731f890f33e8e0a247fbfb2d87aab5b",
-      "matched_terms": [
-        "Gene DiGirolamo",
-        "Diane M. Ellis-Marseglia",
-        "Robert J. Harvie",
-        "Harvie"
-      ],
-      "precision": "date",
-      "priority": "standard",
-      "source": "CourtListener RECAP search",
-      "source_id": "cl-case:75097036",
-      "title": "SCHEMM v. BUCKS COUNTY",
-      "url": "https://www.courtlistener.com/docket/75097036/schemm-v-bucks-county/"
-    },
-    {
-      "case_number": "2:26-cv-08583",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "COMPLAINT against BROMILEY, BUCKS COUNTY, COLEMAN, JEFF CONTINO, GENE DIGIROLAMO, DIANE M. ELLIS-MARSEGLIA, GOLDNER, ROBERT J. HARVIE, JR, HEILMAN, JACKSON, DAVID KRATZ, LECKAGE, MCFADDEN, CARL METELLUS, POLEHOPPIN, KELLY REED, TORRES, filed by KATHERINE L. SCHEMM. (NO FEE PAID, NO IFP FILED). (Attachments: # 1 Cover Letter)(ahf) (Entered: 11/10/2026)",
-      "filed_at": "2026-11-09",
-      "fingerprint": "075b571893bdf8f869b9fd252cb87d8a254aec832511862ce197358a4095c9c1",
-      "matched_terms": [
-        "Gene DiGirolamo",
-        "Diane M. Ellis-Marseglia",
-        "Robert J. Harvie",
-        "Harvie"
-      ],
-      "precision": "date",
-      "priority": "standard",
-      "source": "CourtListener RECAP search",
-      "source_id": "cl-document:500958236",
-      "title": "SCHEMM v. BUCKS COUNTY",
-      "url": "https://www.courtlistener.com/docket/75097036/1/schemm-v-bucks-county/"
-    }
-  ],
+  "generated_at": "2026-11-11T00:58:43.873340-05:00",
+  "items": [],
   "scheduled": true,
-  "since": "2026-11-07T18:58:33.259628-05:00",
+  "since": "2026-11-08T00:58:01.348515-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1197,
-      "inspected": 1197,
+      "fetched": 1193,
+      "inspected": 1193,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -69,7 +30,7 @@
     },
     {
       "court": "Pennsylvania Supreme Court",
-      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 14,
       "inspected": 14,
       "source": "UJS appellate case search",
@@ -77,7 +38,7 @@
     },
     {
       "court": "Pennsylvania Superior Court",
-      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 53,
       "inspected": 53,
       "source": "UJS appellate case search",
@@ -85,7 +46,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-07; 0 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 3,
       "inspected": 3,
       "source": "UJS appellate case search",
@@ -125,17 +86,17 @@
     },
     {
       "court": "Philadelphia Court of Common Pleas",
-      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-09.",
-      "fetched": 2171,
-      "inspected": 79,
+      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-10.",
+      "fetched": 2228,
+      "inspected": 132,
       "source": "Philadelphia FJD complaints mirror",
       "status": "ok"
     },
     {
       "court": "Bucks County Court of Common Pleas",
-      "detail": "Civil cases opened from 11/07/2026 through 11/10/2026.",
-      "fetched": 125,
-      "inspected": 15,
+      "detail": "Civil cases opened from 11/08/2026 through 11/11/2026.",
+      "fetched": 142,
+      "inspected": 17,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -149,15 +110,15 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "Civil cases opened since 2026-11-07.",
+      "detail": "Civil cases opened since 2026-11-08.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-07&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-10&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-08&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-11&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
