@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-11T16:25:55.780608-05:00",
+  "generated_at": "2026-11-11T21:28:42.298103-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-08T16:23:44.365885-05:00",
+  "since": "2026-11-08T21:27:48.555235-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 455,
-      "inspected": 455,
+      "fetched": 233,
+      "inspected": 233,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -22,33 +22,33 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "paed query 1: ReadTimeout: HTTPSConnectionPool(host='www.courtlistener.com', port=443): Read timed out. (read timeout=45)",
-      "fetched": 3,
-      "inspected": 17,
+      "detail": "18 targeted search queries completed.",
+      "fetched": 8,
+      "inspected": 18,
       "source": "CourtListener RECAP search",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 14,
-      "inspected": 14,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 53,
-      "inspected": 53,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
       "detail": "New appellate dockets searched from 2026-11-08; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 3,
-      "inspected": 3,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -118,7 +118,7 @@
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-08&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-11&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-08&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-12&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
