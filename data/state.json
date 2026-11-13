@@ -1,10 +1,10 @@
 {
   "health_errors": {
-    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-09&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-12&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-09&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-13&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-12T18:50:39.091975-05:00",
+  "last_run": "2026-11-12T23:10:35.707266-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -9442,7 +9442,36 @@
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?618532&2707",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665046&24",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665314&4",
-      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665333&3"
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665333&3",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?660749&48",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665345&3",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?634267&78",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?643895&160",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664391&35",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?645599&209",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?551231&530",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663842&30",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662991&41",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663858&34",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663847&30",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663852&23",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?622191&127",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663864&23",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663865&27",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663849&25",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663862&24",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662867&42",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?637897&136",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?654611&43",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?655976&31",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?663558&45",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?622191&125",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?643147&252",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?649574&181",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665344&7",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?640116&79",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?656965&90",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?639175&232"
     ],
     "opinion": [
       "opinion:https://www.pacourts.us/assets/opinions/Supreme/out/62RST2026 - 106980247379586301.pdf",
