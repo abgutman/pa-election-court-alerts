@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-14T02:31:23.802830-05:00",
+  "generated_at": "2026-11-14T09:32:16.745571-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-11T02:30:47.644073-05:00",
+  "since": "2026-11-11T09:31:31.262390-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1497,
-      "inspected": 1497,
+      "fetched": 1426,
+      "inspected": 1426,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -96,7 +96,7 @@
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/11/2026 through 11/14/2026.",
       "fetched": 188,
-      "inspected": 3,
+      "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-11.",
       "fetched": 20,
-      "inspected": 12,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
