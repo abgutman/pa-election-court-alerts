@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-14T21:55:35.857136-05:00",
+  "generated_at": "2026-11-15T05:39:22.189683-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-11T21:54:53.239281-05:00",
+  "since": "2026-11-12T05:38:41.329828-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 26,
-      "inspected": 26,
+      "fetched": 4,
+      "inspected": 4,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -23,32 +23,32 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 14,
+      "fetched": 12,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
-      "detail": "New appellate dockets searched from 2026-11-11; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 9,
+      "inspected": 9,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
-      "detail": "New appellate dockets searched from 2026-11-11; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 51,
+      "inspected": 51,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-11; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 13,
+      "inspected": 13,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -87,15 +87,15 @@
     {
       "court": "Philadelphia Court of Common Pleas",
       "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-13.",
-      "fetched": 2170,
-      "inspected": 191,
+      "fetched": 2060,
+      "inspected": 132,
       "source": "Philadelphia FJD complaints mirror",
       "status": "ok"
     },
     {
       "court": "Bucks County Court of Common Pleas",
-      "detail": "Civil cases opened from 11/11/2026 through 11/14/2026.",
-      "fetched": 188,
+      "detail": "Civil cases opened from 11/12/2026 through 11/15/2026.",
+      "fetched": 156,
       "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
@@ -110,15 +110,15 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "Civil cases opened since 2026-11-11.",
+      "detail": "Civil cases opened since 2026-11-12.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 9,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-11&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-15&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-12&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-15&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
