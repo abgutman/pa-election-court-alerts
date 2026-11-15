@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-15T12:27:18.333394-05:00",
+  "generated_at": "2026-11-15T17:01:13.930346-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-12T12:25:42.082250-05:00",
+  "since": "2026-11-12T17:00:29.990707-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 8,
-      "inspected": 8,
+      "fetched": 15,
+      "inspected": 15,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -102,7 +102,7 @@
     },
     {
       "court": "Montgomery County Court of Common Pleas",
-      "detail": "ConnectTimeout: HTTPSConnectionPool(host='courtsapp.montcopa.org', port=443): Max retries exceeded with url: /psi/v/search/case (Caused by ConnectTimeoutError(<HTTPSConnection(host='courtsapp.montcopa.org', port=443) at 0x761b5df5be60>, 'Connection to courtsapp.montcopa.org timed out. (connect timeout=45)'))",
+      "detail": "RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
       "fetched": 0,
       "inspected": 0,
       "source": "PSI Web Viewer",
@@ -110,11 +110,11 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "HTTPError: 403 Client Error: Forbidden for url: https://delcopublicaccessapi.co.delaware.pa.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-12&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-15&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
-      "fetched": 0,
+      "detail": "Civil cases opened since 2026-11-12.",
+      "fetched": 20,
       "inspected": 0,
       "source": "C-Track Public Access",
-      "status": "error"
+      "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
