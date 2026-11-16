@@ -1,10 +1,10 @@
 {
   "health_errors": {
-    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-12&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-16&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-13&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-16&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-15T21:02:04.420576-05:00",
+  "last_run": "2026-11-16T04:37:31.295345-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -911,7 +911,21 @@
       "delaware:0eed702ff71376c86dc607e51d288c2895d0e489c2907975ab5cf98c1129b9fc",
       "delaware:9040f9395737aedaf5432c3414ebed66d960852b311a23d52e66a5a9d234ab70",
       "delaware:210e4283ecbd1560cbf1f1ef8000a3af49c6f036185dfdfc2eb8788571e0c2ba",
-      "delaware:7cf67eda57aab15cc64388f5889586c32ba21ece5d6741ba7673102afa20de62"
+      "delaware:7cf67eda57aab15cc64388f5889586c32ba21ece5d6741ba7673102afa20de62",
+      "delaware:ea3319b57c2d9181c22c79ae8a9590955c46c448fb041cf1a84d61e2f5de5c90",
+      "delaware:26652f2e9579023b643e45a327a853c28aa80399582b5ded380c56d6d92777c9",
+      "delaware:0aea1ffa52a9b21d085c8f1996a399f534174a9111a954d7cb179a8b5f0e4fba",
+      "delaware:d3b23832e13cd79e70e1601544130c6cc9d9b9463709f358608b8e6f800b4bc2",
+      "delaware:112920b6f4c94f5dbc467e3692351281664f011bceff753e256c607418924162",
+      "delaware:a31298f34c78ccb29e5e4b7f5d70bf55e51ad8c93e650c9e62f4895df2e29052",
+      "delaware:b4d28d29d410e6701663de3727ae114bf0e87d3946ef9b09a890cf7ddd76eb1b",
+      "delaware:1a294df0e7ffd364c797b6ae5ad120eeb2a52e4786e77a02cffbe0e05627cfe3",
+      "delaware:5dbfaa335c82da623f1e1c245e2ccafc0d12248d7f178ba62ab9aa2fefced2d3",
+      "delaware:48a4470c0050bde53851962528cd354dba0e7fa270a19daa2b397560c4a4cab9",
+      "delaware:ce255cdccdf01941882096ba9ad6682c3b348610e9705de4c39e54b9b73931eb",
+      "delaware:3647790b61772a9222ba963807701ee82d358b7144549852c7e8ea5cccf9389f",
+      "delaware:d1ac8a6968ffc72804d6882286222ad27bd193a49ab09d50fb17008e0da0b354",
+      "delaware:a1cfeb72ebe9d7fe125bbf00808aecb6cfe7dec88d59ef341cf15839fdde39c6"
     ],
     "edpa": [
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664150&23",

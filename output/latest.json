@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-15T21:02:04.420576-05:00",
+  "generated_at": "2026-11-16T04:37:31.295345-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-12T21:00:31.169228-05:00",
+  "since": "2026-11-13T04:36:56.584926-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
@@ -23,32 +23,32 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 12,
+      "fetched": 3,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
-      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 5,
+      "inspected": 5,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
-      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 28,
+      "inspected": 28,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-12; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 1,
+      "inspected": 1,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -87,15 +87,15 @@
     {
       "court": "Philadelphia Court of Common Pleas",
       "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-13.",
-      "fetched": 2060,
-      "inspected": 132,
+      "fetched": 1960,
+      "inspected": 22,
       "source": "Philadelphia FJD complaints mirror",
       "status": "ok"
     },
     {
       "court": "Bucks County Court of Common Pleas",
-      "detail": "Civil cases opened from 11/12/2026 through 11/15/2026.",
-      "fetched": 156,
+      "detail": "Civil cases opened from 11/13/2026 through 11/16/2026.",
+      "fetched": 70,
       "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
@@ -110,15 +110,15 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "Civil cases opened since 2026-11-12.",
+      "detail": "Civil cases opened since 2026-11-13.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 14,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-12&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-16&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-13&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-16&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
