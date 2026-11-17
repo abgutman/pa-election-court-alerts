@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17T06:40:35.968318-05:00",
+  "generated_at": "2026-11-17T15:05:04.926898-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-14T06:39:43.515827-05:00",
+  "since": "2026-11-14T15:03:38.549617-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1336,
-      "inspected": 1336,
+      "fetched": 1286,
+      "inspected": 1286,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -22,55 +22,55 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "ca3 query 4: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=ca3&q=%22Matthew+M.+Osterberg%22+OR+%22Ronald+R.+Schmalzle%22+OR+%22Christa+L.+Caceres%22+OR+%22Nadeen+Manzoni%22+OR+%22Jocelyn+Cramer%22+OR+%22James+Shook%22+OR+%22Brian+Smith%22+OR+%22Amy+Christopher%22+OR+%22Pennsylvania+Department+of+State%22+OR+%22Pennsylvania+Bureau+of+Elections%22+OR+%22Philadelphia+County+Board+of+Elections%22+OR+%22Philadelphia+City+Commissioners%22+OR+%22Bucks+County+Board+of+Elections%22+OR+%22Chester+County+Board+of+Elections%22+OR+%22Delaware+County+Board+of+Elections%22+OR+%22Montgomery+County+Board+of+Elections%22+OR+%22Lackawanna+County+Board+of+Elections%22+OR+%22Luzerne+County+Board+of+Elections+and+Registration%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100; ca3 query 6: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=ca3&q=%22Pennsylvania+Democratic+Party%22+OR+%22Democratic+Party+of+Pennsylvania%22+OR+%22Republican+Party+of+Pennsylvania%22+OR+%22Pennsylvania+Republican+Party%22+OR+%22Libertarian+Party+of+Pennsylvania%22+OR+%22Green+Party+of+Pennsylvania%22+OR+%22Philadelphia+Democratic+City+Committee%22+OR+%22Republican+City+Committee+of+Philadelphia%22+OR+%22Bucks+County+Democratic+Committee%22+OR+%22Bucks+County+Republican+Committee%22+OR+%22Chester+County+Democratic+Committee%22+OR+%22Republican+Committee+of+Chester+County%22+OR+%22Delaware+County+Democratic+Party%22+OR+%22Delaware+County+Republican+Party%22+OR+%22Montgomery+County+Democratic+Committee%22+OR+%22Montgomery+County+Republican+Committee%22+OR+%22Lackawanna+County+Democratic+Committee%22+OR+%22Lackawanna+County+Republican+Committee%22+OR+%22Luzerne+County+Democratic+Party%22+OR+%22Republican+Party+of+Luzerne+County%22+OR+%22Monroe+County+Democratic+Committee%22+OR+%22Monroe+County+Republican+Committee%22+OR+%22Pike+County+Democratic+Committee%22+OR+%22Pike+County+Republican+Committee%22+OR+%22Wayne+County+Democratic+Committee%22+OR+%22Wayne+County+Republican+Committee%22+OR+%22Democratic+National+Committee%22+OR+%22Republican+National+Committee%22+OR+%22Democratic+Congressional+Campaign+Committee%22+OR+%22National+Republican+Congressional+Committee%22+OR+%22DCCC%22+OR+%22NRCC%22+OR+%22Action+Together+NEPA+PAC%22+OR+%22America+PAC%22+OR+%22Defending+America+PAC%22+OR+%22Building+Together%22+OR+%22Campaign+for+Working+Class+Communities%22+OR+%22CFFE+PAC%22+OR+%22For+Our+Future%22+OR+%22Future+Pennsylvania+PAC%22+OR+%22Indivisible+Action%22+OR+%22MomsRising+Together%22+OR+%22No+Going+Back+PAC+Inc.%22+OR+%22NRA+Victory+Fund%2C+Inc.%22+OR+%22Our+Heritage+Matters%22+OR+%22Progressive+Turnout+Project%22+OR+%22Seniors+Empowering+an+Effective+Democracy%22+OR+%22SEED-PAC%22+OR+%22Tomorrow+Together%22+OR+%22UnidosUS+Action+PAC%22+OR+%22Workers+Vote%22+OR+%22Working+America%22+OR+%22Congressional+Leadership+Fund%22+OR+%22House+Majority+PAC%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100",
-      "fetched": 0,
-      "inspected": 16,
+      "detail": "pamd query 5: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=pamd&q=%22Monroe+County+Board+of+Elections%22+OR+%22Pike+County+Board+of+Elections%22+OR+%22Wayne+County+Board+of+Elections%22+OR+%22Bob+Harvie%22+OR+%22Brian+Fitzpatrick%22+OR+%22Paige+Cognetti%22+OR+%22Rob+Bresnahan+Jr.%22+OR+%22Bob+Harvie+for+Congress%22+OR+%22Brian+Fitzpatrick+for+All+of+Us%22+OR+%22Paige+for+PA%22+OR+%22Rob+for+PA%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100",
+      "fetched": 2,
+      "inspected": 17,
       "source": "CourtListener RECAP search",
       "status": "partial"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 6,
-      "inspected": 6,
+      "fetched": 13,
+      "inspected": 13,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 35,
-      "inspected": 35,
+      "fetched": 64,
+      "inspected": 64,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 3,
-      "inspected": 3,
+      "detail": "New appellate dockets searched from 2026-11-14; 2 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 5,
+      "inspected": 5,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 52,
-      "inspected": 52,
+      "fetched": 57,
+      "inspected": 57,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 59,
-      "inspected": 59,
+      "fetched": 58,
+      "inspected": 58,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 8 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/14/2026 through 11/17/2026.",
-      "fetched": 87,
-      "inspected": 20,
+      "fetched": 144,
+      "inspected": 57,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-14.",
       "fetched": 20,
-      "inspected": 20,
+      "inspected": 4,
       "source": "C-Track Public Access",
       "status": "ok"
     },
