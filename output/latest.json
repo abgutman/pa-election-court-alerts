@@ -1,33 +1,14 @@
 {
-  "generated_at": "2026-11-16T21:53:23.962171-05:00",
-  "items": [
-    {
-      "case_number": "2:26-cv-05544",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "[Response in Opposition to Motion] ( 14 )",
-      "filed_at": "2026-11-16T16:48:33-05:00",
-      "fingerprint": "b94508ea03054da302868fb3b85ec33a0cbd288a5d1e367e51960051286590f0",
-      "matched_terms": [
-        "Harvie",
-        "America PAC",
-        "Defending America PAC"
-      ],
-      "precision": "time",
-      "priority": "standard",
-      "source": "EDPA official CM/ECF RSS",
-      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151&40",
-      "title": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al",
-      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151"
-    }
-  ],
+  "generated_at": "2026-11-17T06:40:35.968318-05:00",
+  "items": [],
   "scheduled": true,
-  "since": "2026-11-13T21:51:42.995244-05:00",
+  "since": "2026-11-14T06:39:43.515827-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1323,
-      "inspected": 1323,
+      "fetched": 1336,
+      "inspected": 1336,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -41,33 +22,33 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "18 targeted search queries completed.",
-      "fetched": 5,
-      "inspected": 18,
+      "detail": "ca3 query 4: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=ca3&q=%22Matthew+M.+Osterberg%22+OR+%22Ronald+R.+Schmalzle%22+OR+%22Christa+L.+Caceres%22+OR+%22Nadeen+Manzoni%22+OR+%22Jocelyn+Cramer%22+OR+%22James+Shook%22+OR+%22Brian+Smith%22+OR+%22Amy+Christopher%22+OR+%22Pennsylvania+Department+of+State%22+OR+%22Pennsylvania+Bureau+of+Elections%22+OR+%22Philadelphia+County+Board+of+Elections%22+OR+%22Philadelphia+City+Commissioners%22+OR+%22Bucks+County+Board+of+Elections%22+OR+%22Chester+County+Board+of+Elections%22+OR+%22Delaware+County+Board+of+Elections%22+OR+%22Montgomery+County+Board+of+Elections%22+OR+%22Lackawanna+County+Board+of+Elections%22+OR+%22Luzerne+County+Board+of+Elections+and+Registration%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100; ca3 query 6: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=ca3&q=%22Pennsylvania+Democratic+Party%22+OR+%22Democratic+Party+of+Pennsylvania%22+OR+%22Republican+Party+of+Pennsylvania%22+OR+%22Pennsylvania+Republican+Party%22+OR+%22Libertarian+Party+of+Pennsylvania%22+OR+%22Green+Party+of+Pennsylvania%22+OR+%22Philadelphia+Democratic+City+Committee%22+OR+%22Republican+City+Committee+of+Philadelphia%22+OR+%22Bucks+County+Democratic+Committee%22+OR+%22Bucks+County+Republican+Committee%22+OR+%22Chester+County+Democratic+Committee%22+OR+%22Republican+Committee+of+Chester+County%22+OR+%22Delaware+County+Democratic+Party%22+OR+%22Delaware+County+Republican+Party%22+OR+%22Montgomery+County+Democratic+Committee%22+OR+%22Montgomery+County+Republican+Committee%22+OR+%22Lackawanna+County+Democratic+Committee%22+OR+%22Lackawanna+County+Republican+Committee%22+OR+%22Luzerne+County+Democratic+Party%22+OR+%22Republican+Party+of+Luzerne+County%22+OR+%22Monroe+County+Democratic+Committee%22+OR+%22Monroe+County+Republican+Committee%22+OR+%22Pike+County+Democratic+Committee%22+OR+%22Pike+County+Republican+Committee%22+OR+%22Wayne+County+Democratic+Committee%22+OR+%22Wayne+County+Republican+Committee%22+OR+%22Democratic+National+Committee%22+OR+%22Republican+National+Committee%22+OR+%22Democratic+Congressional+Campaign+Committee%22+OR+%22National+Republican+Congressional+Committee%22+OR+%22DCCC%22+OR+%22NRCC%22+OR+%22Action+Together+NEPA+PAC%22+OR+%22America+PAC%22+OR+%22Defending+America+PAC%22+OR+%22Building+Together%22+OR+%22Campaign+for+Working+Class+Communities%22+OR+%22CFFE+PAC%22+OR+%22For+Our+Future%22+OR+%22Future+Pennsylvania+PAC%22+OR+%22Indivisible+Action%22+OR+%22MomsRising+Together%22+OR+%22No+Going+Back+PAC+Inc.%22+OR+%22NRA+Victory+Fund%2C+Inc.%22+OR+%22Our+Heritage+Matters%22+OR+%22Progressive+Turnout+Project%22+OR+%22Seniors+Empowering+an+Effective+Democracy%22+OR+%22SEED-PAC%22+OR+%22Tomorrow+Together%22+OR+%22UnidosUS+Action+PAC%22+OR+%22Workers+Vote%22+OR+%22Working+America%22+OR+%22Congressional+Leadership+Fund%22+OR+%22House+Majority+PAC%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100",
+      "fetched": 0,
+      "inspected": 16,
       "source": "CourtListener RECAP search",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "court": "Pennsylvania Supreme Court",
-      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 6,
+      "inspected": 6,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
-      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 35,
+      "inspected": 35,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 3,
+      "inspected": 3,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -105,17 +86,17 @@
     },
     {
       "court": "Philadelphia Court of Common Pleas",
-      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-13.",
-      "fetched": 1960,
-      "inspected": 22,
+      "detail": "Periodic public-data mirror; newest filing date in source is 2026-11-16.",
+      "fetched": 2088,
+      "inspected": 70,
       "source": "Philadelphia FJD complaints mirror",
       "status": "ok"
     },
     {
       "court": "Bucks County Court of Common Pleas",
-      "detail": "Civil cases opened from 11/13/2026 through 11/16/2026.",
-      "fetched": 160,
-      "inspected": 6,
+      "detail": "Civil cases opened from 11/14/2026 through 11/17/2026.",
+      "fetched": 87,
+      "inspected": 20,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -129,15 +110,15 @@
     },
     {
       "court": "Delaware County Court of Common Pleas",
-      "detail": "Civil cases opened since 2026-11-13.",
+      "detail": "Civil cases opened since 2026-11-14.",
       "fetched": 20,
-      "inspected": 1,
+      "inspected": 20,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-13&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-17&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-14&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-17&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
