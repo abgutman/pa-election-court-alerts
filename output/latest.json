@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-11-16T14:55:08.417890-05:00",
+  "generated_at": "2026-11-16T21:53:23.962171-05:00",
   "items": [
     {
-      "case_number": "1067 C.D. 2025",
-      "court": "Pennsylvania Commonwealth Court",
-      "description": "Published opinion",
-      "filed_at": "2026-11-16T00:00:00-05:00",
-      "fingerprint": "e9534b3063e1c8571b0028668901f5e3cdc8259f2e1934224c47681a3473f4ec",
+      "case_number": "2:26-cv-05544",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "[Response in Opposition to Motion] ( 14 )",
+      "filed_at": "2026-11-16T16:48:33-05:00",
+      "fingerprint": "b94508ea03054da302868fb3b85ec33a0cbd288a5d1e367e51960051286590f0",
       "matched_terms": [
-        "Matthew M. Osterberg",
-        "Christa L. Caceres",
-        "voter",
-        "voter registration"
+        "Harvie",
+        "America PAC",
+        "Defending America PAC"
       ],
       "precision": "time",
-      "priority": "high",
-      "source": "Pennsylvania Courts opinion RSS",
-      "source_id": "opinion:https://www.pacourts.us/assets/opinions/Commonwealth/out/1067CD25_11-16-2026.pdf",
-      "title": "J. L. Wagner v. Pike Co. Commissioners, et al. - 1067 C.D. 2025",
-      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1067CD25_11-16-2026.pdf"
+      "priority": "standard",
+      "source": "EDPA official CM/ECF RSS",
+      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151&40",
+      "title": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al",
+      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151"
     }
   ],
   "scheduled": true,
-  "since": "2026-11-13T14:53:03.520671-05:00",
+  "since": "2026-11-13T21:51:42.995244-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 794,
-      "inspected": 794,
+      "fetched": 1323,
+      "inspected": 1323,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -43,7 +42,7 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 4,
+      "fetched": 5,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
@@ -51,24 +50,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 11,
-      "inspected": 11,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 57,
-      "inspected": 57,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-13; 5 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 6,
-      "inspected": 6,
+      "detail": "New appellate dockets searched from 2026-11-13; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -90,7 +89,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 14 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -115,8 +114,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/13/2026 through 11/16/2026.",
-      "fetched": 154,
-      "inspected": 84,
+      "fetched": 160,
+      "inspected": 6,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -132,13 +131,13 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-13.",
       "fetched": 20,
-      "inspected": 0,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-13&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-16&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-13&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-17&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
