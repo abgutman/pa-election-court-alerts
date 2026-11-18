@@ -1,14 +1,47 @@
 {
-  "generated_at": "2026-11-18T05:38:06.626868-05:00",
-  "items": [],
+  "generated_at": "2026-11-18T14:07:06.257397-05:00",
+  "items": [
+    {
+      "case_number": "1498 C.D. 2025",
+      "court": "Pennsylvania Commonwealth Court",
+      "description": "Published opinion",
+      "filed_at": "2026-11-18T00:00:00-05:00",
+      "fingerprint": "21ae324b9158926086be0b5c1b09a42aa2a10b1b4b2aa10100c7fab969a6d8be",
+      "matched_terms": [
+        "Pennsylvania Department of State"
+      ],
+      "precision": "time",
+      "priority": "high",
+      "source": "Pennsylvania Courts opinion RSS",
+      "source_id": "opinion:https://www.pacourts.us/assets/opinions/Commonwealth/out/1498CD25_11-18-2026.pdf",
+      "title": "C. Ng v. Dept. of State (OOR) - 1498 C.D. 2025",
+      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1498CD25_11-18-2026.pdf"
+    },
+    {
+      "case_number": "2:26-cv-02879",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "[Protective Order] ( 16 )",
+      "filed_at": "2026-11-18T11:17:13-05:00",
+      "fingerprint": "f4f7d414db63bd14ffae826f98fd1ba63bdb9891d7fb910cd5e368e88b86917a",
+      "matched_terms": [
+        "Working America"
+      ],
+      "precision": "time",
+      "priority": "standard",
+      "source": "EDPA official CM/ECF RSS",
+      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?653856&43",
+      "title": "2:26-cv-02879 AUSTIN v. WORKING AMERICA",
+      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?653856"
+    }
+  ],
   "scheduled": true,
-  "since": "2026-11-15T05:37:26.084637-05:00",
+  "since": "2026-11-15T14:05:21.480838-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1191,
-      "inspected": 1191,
+      "fetched": 1224,
+      "inspected": 1224,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -31,24 +64,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-15; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 13,
-      "inspected": 13,
+      "fetched": 18,
+      "inspected": 18,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-15; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 65,
-      "inspected": 65,
+      "fetched": 89,
+      "inspected": 89,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-15; 1 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 6,
-      "inspected": 6,
+      "detail": "New appellate dockets searched from 2026-11-15; 3 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 9,
+      "inspected": 9,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -63,14 +96,14 @@
     {
       "court": "Pennsylvania Superior Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 58,
-      "inspected": 58,
+      "fetched": 59,
+      "inspected": 59,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 7 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +128,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/15/2026 through 11/18/2026.",
-      "fetched": 152,
-      "inspected": 6,
+      "fetched": 199,
+      "inspected": 47,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
