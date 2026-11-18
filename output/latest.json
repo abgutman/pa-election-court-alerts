@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17T15:05:04.926898-05:00",
+  "generated_at": "2026-11-17T21:25:45.034490-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-14T15:03:38.549617-05:00",
+  "since": "2026-11-14T21:25:04.770240-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1286,
-      "inspected": 1286,
+      "fetched": 1198,
+      "inspected": 1198,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -22,33 +22,33 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "pamd query 5: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=pamd&q=%22Monroe+County+Board+of+Elections%22+OR+%22Pike+County+Board+of+Elections%22+OR+%22Wayne+County+Board+of+Elections%22+OR+%22Bob+Harvie%22+OR+%22Brian+Fitzpatrick%22+OR+%22Paige+Cognetti%22+OR+%22Rob+Bresnahan+Jr.%22+OR+%22Bob+Harvie+for+Congress%22+OR+%22Brian+Fitzpatrick+for+All+of+Us%22+OR+%22Paige+for+PA%22+OR+%22Rob+for+PA%22&filed_after=11%2F14%2F2026&order_by=dateFiled+desc&page_size=100",
-      "fetched": 2,
-      "inspected": 17,
+      "detail": "18 targeted search queries completed.",
+      "fetched": 3,
+      "inspected": 18,
       "source": "CourtListener RECAP search",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 13,
-      "inspected": 13,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 64,
-      "inspected": 64,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-14; 2 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 5,
-      "inspected": 5,
+      "detail": "New appellate dockets searched from 2026-11-14; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -70,7 +70,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 8 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/14/2026 through 11/17/2026.",
-      "fetched": 144,
-      "inspected": 57,
+      "fetched": 146,
+      "inspected": 2,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,13 +112,13 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-14.",
       "fetched": 20,
-      "inspected": 4,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-14&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-17&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-14&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-18&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
