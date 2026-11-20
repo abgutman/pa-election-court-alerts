@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-20T02:49:53.225212-05:00",
+  "generated_at": "2026-11-20T11:29:42.099757-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-17T02:48:13.826782-05:00",
+  "since": "2026-11-17T11:28:42.826934-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1177,
-      "inspected": 1177,
+      "fetched": 0,
+      "inspected": 0,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -22,31 +22,31 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "18 targeted search queries completed.",
+      "detail": "pamd query 3: HTTPError: 502 Server Error: Bad Gateway for url: https://www.courtlistener.com/api/rest/v4/search/?type=r&court=pamd&q=%22Jamila+H.+Winder%22+OR+%22Thomas+DiBello%22+OR+%22Frank+Dean%22+OR+%22Bill+Gaughan%22+OR+%22Chris+Chermak%22+OR+%22Thom+Welby%22+OR+%22Elizabeth+Hopkins%22+OR+%22Christine+Boyle%22+OR+%22Albert+Schlosser%22+OR+%22Richard+Morelli%22+OR+%22Audrey+Serniak%22+OR+%22Roxanne+Arreguin%22+OR+%22Emily+Cook%22+OR+%22John+D.+Christy%22+OR+%22David+C.+Parker%22+OR+%22Sharon+S.+Laverdure%22+OR+%22Sara+May-Silfee%22+OR+%22Penny+Robson%22&filed_after=11%2F17%2F2026&order_by=dateFiled+desc&page_size=100",
       "fetched": 6,
-      "inspected": 18,
+      "inspected": 17,
       "source": "CourtListener RECAP search",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-17; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 17,
-      "inspected": 17,
+      "fetched": 22,
+      "inspected": 22,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-17; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 85,
-      "inspected": 85,
+      "fetched": 101,
+      "inspected": 101,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-17; 3 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-11-17; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 9,
       "inspected": 9,
       "source": "UJS appellate case search",
@@ -70,7 +70,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 2 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +95,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/17/2026 through 11/20/2026.",
-      "fetched": 241,
-      "inspected": 0,
+      "fetched": 279,
+      "inspected": 38,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-17.",
       "fetched": 20,
-      "inspected": 15,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
