@@ -4,7 +4,7 @@
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-21T13:19:45.872800-05:00",
+  "last_run": "2026-11-21T18:30:35.672678-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -17614,7 +17614,12 @@
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?660629&49",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?649616&89",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?658234&65",
-      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?644564&99"
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?644564&99",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662122&76",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662122&73",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662122&70",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662122&67",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?661266&58"
     ],
     "opinion": [
       "opinion:https://www.pacourts.us/assets/opinions/Supreme/out/62RST2026 - 106980247379586301.pdf",
