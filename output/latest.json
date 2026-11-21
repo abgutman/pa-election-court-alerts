@@ -1,50 +1,14 @@
 {
-  "generated_at": "2026-11-21T06:48:01.481822-05:00",
-  "items": [
-    {
-      "case_number": "2:26-cv-05544",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "[Notice of Appearance] ( 15 )",
-      "filed_at": "2026-11-20T14:35:07-05:00",
-      "fingerprint": "45fc0bf8625219a9871a6e944a26d4564a70abcc17ef0aaba3d000aba959ebfe",
-      "matched_terms": [
-        "Harvie",
-        "America PAC",
-        "Defending America PAC"
-      ],
-      "precision": "time",
-      "priority": "standard",
-      "source": "EDPA official CM/ECF RSS",
-      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151&43",
-      "title": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al",
-      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151"
-    },
-    {
-      "case_number": "5:22-cv-00397",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "[USCA Mandate] ( 110 )",
-      "filed_at": "2026-11-20T12:16:39-05:00",
-      "fingerprint": "e789a0b99a9884470224d788be5a2b0d370ca351ce751b3f3f025cf9b2924e2c",
-      "matched_terms": [
-        "elections",
-        "board of elections"
-      ],
-      "precision": "time",
-      "priority": "standard",
-      "source": "EDPA official CM/ECF RSS",
-      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?593192&365",
-      "title": "5:22-cv-00397 MIGLIORI et al v. LEHIGH COUNTY BOARD OF ELECTIONS",
-      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?593192"
-    }
-  ],
+  "generated_at": "2026-11-21T13:19:45.872800-05:00",
+  "items": [],
   "scheduled": true,
-  "since": "2026-11-18T06:46:57.791104-05:00",
+  "since": "2026-11-18T13:18:23.916071-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 27773,
-      "inspected": 27773,
+      "fetched": 632,
+      "inspected": 632,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -58,11 +22,11 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "18 targeted search queries completed.",
+      "detail": "paed query 3: ReadTimeout: HTTPSConnectionPool(host='www.courtlistener.com', port=443): Read timed out. (read timeout=45)",
       "fetched": 6,
-      "inspected": 18,
+      "inspected": 17,
       "source": "CourtListener RECAP search",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "court": "Pennsylvania Supreme Court",
@@ -132,7 +96,7 @@
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/18/2026 through 11/21/2026.",
       "fetched": 241,
-      "inspected": 3,
+      "inspected": 0,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -148,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-18.",
       "fetched": 20,
-      "inspected": 20,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
