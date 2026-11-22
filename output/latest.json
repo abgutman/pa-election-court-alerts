@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-22T06:55:36.745295-05:00",
+  "generated_at": "2026-11-22T14:25:52.459319-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-19T06:54:55.980004-05:00",
+  "since": "2026-11-19T14:25:13.445797-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "detail": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
+      "fetched": 17,
+      "inspected": 17,
       "source": "Official CM/ECF RSS",
-      "status": "error"
+      "status": "ok"
     },
     {
       "court": "U.S. District Court for the Middle District of Pennsylvania",
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-19.",
       "fetched": 20,
-      "inspected": 18,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
