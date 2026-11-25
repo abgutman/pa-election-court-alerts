@@ -1,14 +1,47 @@
 {
-  "generated_at": "2026-11-24T10:41:59.433014-05:00",
-  "items": [],
+  "generated_at": "2026-11-24T19:11:32.987067-05:00",
+  "items": [
+    {
+      "case_number": "2:26-cv-08946",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "RECAP case/search match",
+      "filed_at": "2026-11-23",
+      "fingerprint": "ef400e27cb3bf97b1f13fe0f43470544b2d5a1a83a3c2f1c65c8916d164a44e9",
+      "matched_terms": [
+        "Al Schmidt"
+      ],
+      "precision": "date",
+      "priority": "standard",
+      "source": "CourtListener RECAP search",
+      "source_id": "cl-case:75167735",
+      "title": "STENSTROM v. SCHMIDT",
+      "url": "https://www.courtlistener.com/docket/75167735/stenstrom-v-schmidt/"
+    },
+    {
+      "case_number": "2:26-cv-08946",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "Complaint against AL SCHMIDT filed by GREGORY STENSTROM. NICK MANGANARO and HARRY R. HAURY (Attachments: # 1 Cover Page)(mbh) (Entered: 11/24/2026)",
+      "filed_at": "2026-11-23",
+      "fingerprint": "0eb5c0bdf2b462b24fcf869b7046268b07d8dbfea0ffa27481519e4d42b7f530",
+      "matched_terms": [
+        "Al Schmidt"
+      ],
+      "precision": "date",
+      "priority": "standard",
+      "source": "CourtListener RECAP search",
+      "source_id": "cl-document:502705710",
+      "title": "STENSTROM v. SCHMIDT",
+      "url": "https://www.courtlistener.com/docket/75167735/1/stenstrom-v-schmidt/"
+    }
+  ],
   "scheduled": true,
-  "since": "2026-11-21T10:40:47.035163-05:00",
+  "since": "2026-11-21T19:10:10.788015-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1706,
-      "inspected": 1706,
+      "fetched": 1585,
+      "inspected": 1585,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -23,7 +56,7 @@
     {
       "court": "EDPA, MDPA, and Third Circuit",
       "detail": "18 targeted search queries completed.",
-      "fetched": 5,
+      "fetched": 15,
       "inspected": 18,
       "source": "CourtListener RECAP search",
       "status": "ok"
@@ -31,24 +64,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-21; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 19,
-      "inspected": 19,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-21; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 68,
-      "inspected": 68,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-21; 1 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 3,
-      "inspected": 3,
+      "detail": "New appellate dockets searched from 2026-11-21; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -63,14 +96,14 @@
     {
       "court": "Pennsylvania Superior Court",
       "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
-      "fetched": 60,
-      "inspected": 60,
+      "fetched": 59,
+      "inspected": 59,
       "source": "Pennsylvania Courts opinion RSS",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "Official published-opinion feed; 2 new Commonwealth opinion PDF(s) text-checked.",
+      "detail": "Official published-opinion feed; 0 new Commonwealth opinion PDF(s) text-checked.",
       "fetched": 50,
       "inspected": 50,
       "source": "Pennsylvania Courts opinion RSS",
@@ -95,8 +128,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/21/2026 through 11/24/2026.",
-      "fetched": 112,
-      "inspected": 30,
+      "fetched": 151,
+      "inspected": 39,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -112,13 +145,13 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-21.",
       "fetched": 20,
-      "inspected": 19,
+      "inspected": 4,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-21&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-24&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-21&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-25&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
