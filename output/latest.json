@@ -1,79 +1,49 @@
 {
-  "generated_at": "2026-11-25T14:12:16.656525-05:00",
+  "generated_at": "2026-11-25T21:13:46.857902-05:00",
   "items": [
     {
-      "case_number": "1829 CD 2026",
-      "court": "Pennsylvania Commonwealth Court",
-      "description": "Active",
-      "filed_at": "2026-11-24",
-      "fingerprint": "6177f2a5064f72f1671fe0d672df7afbca0b119796049af898050c46abe55fe0",
-      "matched_terms": [
-        "Pennsylvania Department of State"
-      ],
-      "precision": "date",
-      "priority": "high",
-      "source": "UJS appellate case search",
-      "source_id": "ujs:Pennsylvania Commonwealth Court:1829 CD 2026",
-      "title": "Mahase, S. v. BPOA",
-      "url": "https://ujsportal.pacourts.us/Report/PacDocketSheet?docketNumber=1829 CD 2026&dnh=qVUGc6xeFUzpiPmlHct8jA%3D%3D"
-    },
-    {
-      "case_number": "2:26-cv-08946",
+      "case_number": "2:26-cv-05544",
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "Remark",
-      "filed_at": "2026-11-25",
-      "fingerprint": "cf85095021ccc801acde51b11d72ff09306f73f36a9a4bcfcd17e8f47bac8192",
+      "description": "[Reply to Response to Motion] ( 16 )",
+      "filed_at": "2026-11-25T14:47:55-05:00",
+      "fingerprint": "509793a4bdd86099fc77d6ffeb812eb6df49b866af7282389071caa9a56de038",
       "matched_terms": [
-        "Al Schmidt"
+        "Harvie",
+        "America PAC",
+        "Defending America PAC"
       ],
-      "precision": "date",
+      "precision": "time",
       "priority": "standard",
-      "source": "CourtListener RECAP search",
-      "source_id": "cl-document:502833716",
-      "title": "STENSTROM v. SCHMIDT",
-      "url": "https://www.courtlistener.com"
+      "source": "EDPA official CM/ECF RSS",
+      "source_id": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151&47",
+      "title": "2:26-cv-05544 HARVIE v. DEFENDING AMERICA PAC, INC. et al",
+      "url": "https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659151"
     },
     {
       "case_number": "2:26-cv-08946",
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "Summons Issued",
-      "filed_at": "2026-11-25",
-      "fingerprint": "9c1e4f4329e22c59ddf9b53e2b466b86919666e4be9fdf9d35e17a9a2edeebb4",
-      "matched_terms": [
-        "Al Schmidt"
-      ],
-      "precision": "date",
-      "priority": "standard",
-      "source": "CourtListener RECAP search",
-      "source_id": "cl-document:502857470",
-      "title": "STENSTROM v. SCHMIDT",
-      "url": "https://www.courtlistener.com/docket/75167735/6/stenstrom-v-schmidt/"
-    },
-    {
-      "case_number": "2:26-cv-08946",
-      "court": "U.S. District Court for the Eastern District of Pennsylvania",
-      "description": "Complaint against AL SCHMIDT filed by GREGORY STENSTROM. NICK MANGANARO and HARRY R. HAURY (Attachments: # 1 Cover Page)(mbh) (Entered: 11/24/2026)",
+      "description": "EMERGENCY MOTION FOR TEMPORARY RESTRAINING ORDER FILED BY HARRY R. HAURY, NICK MANGANARO AND GREGORY STENSTROM.. (Attachments: # 1 Cover Page)(mbh) (Entered: 11/24/2026)",
       "filed_at": "2026-11-23",
-      "fingerprint": "3ac33bf82e4546e1dc4848fb5ecc9db6eab1bc9a5095d85b8d40ee0250700be4",
+      "fingerprint": "b980582fe19b359490800bd6fe2201d29de85286e7b33a92dccfbc5818897de8",
       "matched_terms": [
         "Al Schmidt"
       ],
       "precision": "date",
       "priority": "standard",
       "source": "CourtListener RECAP search",
-      "source_id": "cl-document:502818616",
+      "source_id": "cl-document:502705653",
       "title": "STENSTROM v. SCHMIDT",
-      "url": "https://www.courtlistener.com/docket/75167735/1/1/stenstrom-v-schmidt/"
+      "url": "https://www.courtlistener.com/docket/75167735/2/stenstrom-v-schmidt/"
     }
   ],
   "scheduled": true,
-  "since": "2026-11-22T14:06:12.605834-05:00",
+  "since": "2026-11-22T21:12:15.410174-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1497,
-      "inspected": 1497,
+      "fetched": 1130,
+      "inspected": 1130,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -87,33 +57,33 @@
     },
     {
       "court": "EDPA, MDPA, and Third Circuit",
-      "detail": "ca3 query 1: ReadTimeout: HTTPSConnectionPool(host='www.courtlistener.com', port=443): Read timed out. (read timeout=45)",
-      "fetched": 17,
-      "inspected": 17,
+      "detail": "18 targeted search queries completed.",
+      "fetched": 21,
+      "inspected": 18,
       "source": "CourtListener RECAP search",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-22; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 27,
-      "inspected": 27,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-22; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 120,
-      "inspected": 120,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-22; 9 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 16,
-      "inspected": 16,
+      "detail": "New appellate dockets searched from 2026-11-22; 0 new Commonwealth docket PDF(s) text-checked.",
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -143,9 +113,9 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "No election-related Commonwealth Court dockets are tracked yet.",
-      "fetched": 0,
-      "inspected": 0,
+      "detail": "Polled 1 tracked election-related docket sheet(s).",
+      "fetched": 1,
+      "inspected": 1,
       "source": "Commonwealth Court tracked docket",
       "status": "ok"
     },
@@ -160,8 +130,8 @@
     {
       "court": "Bucks County Court of Common Pleas",
       "detail": "Civil cases opened from 11/22/2026 through 11/25/2026.",
-      "fetched": 185,
-      "inspected": 36,
+      "fetched": 192,
+      "inspected": 7,
       "source": "PSI Web Viewer",
       "status": "ok"
     },
@@ -183,7 +153,7 @@
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-22&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-25&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-22&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-26&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
