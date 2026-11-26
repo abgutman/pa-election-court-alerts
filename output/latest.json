@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26T06:08:28.231021-05:00",
+  "generated_at": "2026-11-26T15:12:05.033911-05:00",
   "items": [],
   "scheduled": true,
-  "since": "2026-11-23T06:07:15.243163-05:00",
+  "since": "2026-11-23T15:10:43.192763-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 1104,
-      "inspected": 1104,
+      "fetched": 307,
+      "inspected": 307,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -46,7 +46,7 @@
     },
     {
       "court": "Pennsylvania Commonwealth Court",
-      "detail": "New appellate dockets searched from 2026-11-23; 1 new Commonwealth docket PDF(s) text-checked.",
+      "detail": "New appellate dockets searched from 2026-11-23; 0 new Commonwealth docket PDF(s) text-checked.",
       "fetched": 17,
       "inspected": 17,
       "source": "UJS appellate case search",
@@ -112,7 +112,7 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-23.",
       "fetched": 20,
-      "inspected": 2,
+      "inspected": 1,
       "source": "C-Track Public Access",
       "status": "ok"
     },

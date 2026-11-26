@@ -4,7 +4,7 @@
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-26T06:08:28.231021-05:00",
+  "last_run": "2026-11-26T15:12:05.033911-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -1692,7 +1692,8 @@
       "delaware:b1576d5c186a688ed1d554ce798838ea387b6595a1b647cf05b5ffd2ee69f934",
       "delaware:3038fff0a96a68ff181ce92d1858dbb00332c3aa38e0943c2fbee163eb93ba8d",
       "delaware:094de83a31c0591ad69e95b6b1e425867c94cb652341dd6f6c52f26a3d0385dd",
-      "delaware:2a09cdf6a74d4ee53436d5ecc431aace90eb658e5961da8edd20a12a7c0a2063"
+      "delaware:2a09cdf6a74d4ee53436d5ecc431aace90eb658e5961da8edd20a12a7c0a2063",
+      "delaware:1357b8ff284846ee1471376f967778e805410c4f65897e3a3f2ad85811770d4f"
     ],
     "edpa": [
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664150&23",
@@ -21839,7 +21840,10 @@
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?666088&16",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659428&68",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659428&66",
-      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665645&20"
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665645&20",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664820&78",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659428&70",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662420&41"
     ],
     "opinion": [
       "opinion:https://www.pacourts.us/assets/opinions/Supreme/out/62RST2026 - 106980247379586301.pdf",
