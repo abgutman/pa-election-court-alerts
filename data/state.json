@@ -1,10 +1,10 @@
 {
   "health_errors": {
-    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-23&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-26&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+    "Monroe County Court of Common Pleas|C-Track Public Access": "error|HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-23&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-27&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
     "Montgomery County Court of Common Pleas|PSI Web Viewer": "error|RuntimeError: viewer is gated by a CAPTCHA/Turnstile challenge",
     "U.S. District Court for the Middle District of Pennsylvania|Official CM/ECF RSS": "error|ParseError: no element found: line 1, column 0"
   },
-  "last_run": "2026-11-26T15:12:05.033911-05:00",
+  "last_run": "2026-11-26T21:58:35.963761-05:00",
   "seen": {
     "alerts": [
       "6c5117f8a55d172be2a2eeae5fab4c5792de3cdbae1168269683684a2f2a22f4",
@@ -27,7 +27,8 @@
       "9c1e4f4329e22c59ddf9b53e2b466b86919666e4be9fdf9d35e17a9a2edeebb4",
       "3ac33bf82e4546e1dc4848fb5ecc9db6eab1bc9a5095d85b8d40ee0250700be4",
       "509793a4bdd86099fc77d6ffeb812eb6df49b866af7282389071caa9a56de038",
-      "b980582fe19b359490800bd6fe2201d29de85286e7b33a92dccfbc5818897de8"
+      "b980582fe19b359490800bd6fe2201d29de85286e7b33a92dccfbc5818897de8",
+      "745159dcd0ed36bb834ae98fc7bce7562dbe731e7a93c6a1bd7b0a7417a2aa1d"
     ],
     "bucks": [
       "bucks:2026-07627",
@@ -21843,7 +21844,10 @@
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665645&20",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?664820&78",
       "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?659428&70",
-      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662420&41"
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?662420&41",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?634359&230",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?649183&63",
+      "edpa:https://ecf.paed.uscourts.gov/cgi-bin/DktRpt.pl?665984&16"
     ],
     "opinion": [
       "opinion:https://www.pacourts.us/assets/opinions/Supreme/out/62RST2026 - 106980247379586301.pdf",
@@ -22657,7 +22661,8 @@
       "paed:cl-document:502884323",
       "paed:cl-case:75175952",
       "paed:cl-document:502857536",
-      "paed:cl-document:502705653"
+      "paed:cl-document:502705653",
+      "paed:cl-document:502901499"
     ],
     "pamd": [
       "pamd:cl-case:75092499",

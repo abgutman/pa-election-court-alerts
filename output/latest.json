@@ -1,14 +1,31 @@
 {
-  "generated_at": "2026-11-26T15:12:05.033911-05:00",
-  "items": [],
+  "generated_at": "2026-11-26T21:58:35.963761-05:00",
+  "items": [
+    {
+      "case_number": "2:26-cv-08946",
+      "court": "U.S. District Court for the Eastern District of Pennsylvania",
+      "description": "DOC. #4 MAILED TO PRO SE NICK MANGANARO AND HARRY R. HAURY (tomg)",
+      "filed_at": "2026-11-25",
+      "fingerprint": "745159dcd0ed36bb834ae98fc7bce7562dbe731e7a93c6a1bd7b0a7417a2aa1d",
+      "matched_terms": [
+        "Al Schmidt"
+      ],
+      "precision": "date",
+      "priority": "standard",
+      "source": "CourtListener RECAP search",
+      "source_id": "cl-document:502901499",
+      "title": "STENSTROM v. SCHMIDT",
+      "url": "https://www.courtlistener.com"
+    }
+  ],
   "scheduled": true,
-  "since": "2026-11-23T15:10:43.192763-05:00",
+  "since": "2026-11-23T21:57:39.247706-05:00",
   "statuses": [
     {
       "court": "U.S. District Court for the Eastern District of Pennsylvania",
       "detail": "Official rolling feed; upstream normally retains roughly 24 hours of entries.",
-      "fetched": 307,
-      "inspected": 307,
+      "fetched": 9,
+      "inspected": 9,
       "source": "Official CM/ECF RSS",
       "status": "ok"
     },
@@ -31,24 +48,24 @@
     {
       "court": "Pennsylvania Supreme Court",
       "detail": "New appellate dockets searched from 2026-11-23; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 29,
-      "inspected": 29,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Superior Court",
       "detail": "New appellate dockets searched from 2026-11-23; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 124,
-      "inspected": 124,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
     {
       "court": "Pennsylvania Commonwealth Court",
       "detail": "New appellate dockets searched from 2026-11-23; 0 new Commonwealth docket PDF(s) text-checked.",
-      "fetched": 17,
-      "inspected": 17,
+      "fetched": 0,
+      "inspected": 0,
       "source": "UJS appellate case search",
       "status": "ok"
     },
@@ -112,13 +129,13 @@
       "court": "Delaware County Court of Common Pleas",
       "detail": "Civil cases opened since 2026-11-23.",
       "fetched": 20,
-      "inspected": 1,
+      "inspected": 0,
       "source": "C-Track Public Access",
       "status": "ok"
     },
     {
       "court": "Monroe County Court of Common Pleas",
-      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-23&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-26&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
+      "detail": "HTTPError: 502 Server Error: Bad Gateway for url: https://public-prod.43rdjdpacivilcms.us/api/v1/cases/search?queryString=true&searchFields%5B0%5D.searchType=&searchFields%5B0%5D.operation=%3E%3D&searchFields%5B0%5D.values%5B0%5D=2026-11-23&searchFields%5B0%5D.indexFieldName=filedDate&searchFields%5B1%5D.searchType=&searchFields%5B1%5D.operation=%3C%3D&searchFields%5B1%5D.values%5B0%5D=2026-11-27&searchFields%5B1%5D.indexFieldName=filedDate&page=1&pageSize=100&sortField=filedDate&sortDirection=desc",
       "fetched": 0,
       "inspected": 0,
       "source": "C-Track Public Access",
